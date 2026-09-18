@@ -108,7 +108,7 @@ def test_norm_uit_cellar_richtlijn():
     n = norm_uit_cellar(rij, "32011L0092", MEB_URL)
     assert (n.type, n.nummer) == ("richtlijn", "2011/92/EU")
     assert n.datum == date(2011, 12, 13)
-    assert n.vindplaats == "PB L 26 van 28.1.2012"
+    assert n.vindplaats == "Pb.L. 28 januari 2012, 1"
     assert n.eli == "http://data.europa.eu/eli/dir/2011/92/oj"
 
 
@@ -136,7 +136,7 @@ def test_zoek_op_identifier_fetch_uit_geen_request():
 def test_zoek_op_identifier_meb_richtlijn():
     [n] = _adapter().zoek_op_identifier("Richtlijn 2011/92/EU")
     assert n.celex == "32011L0092" and n.nummer == "2011/92/EU"
-    assert n.vindplaats == "PB L 26 van 28.1.2012"
+    assert n.vindplaats == "Pb.L. 28 januari 2012, 1"
     assert n.url == MEB_URL
 
 
@@ -145,7 +145,7 @@ def test_zoek_op_identifier_natuurherstelverordening_nieuw_publicatieblad():
     assert identifier_naar_celex("Verordening (EU) 2024/1991") is None
     [n] = _adapter().zoek_op_identifier("32024R1991")
     assert n.celex == "32024R1991" and n.type == "verordening"
-    assert n.vindplaats.startswith("PB L, 2024/1991")
+    assert n.vindplaats == "Pb.L. 29 juli 2024"  # akte-per-akte: geen pagina
 
 
 def test_zoek_op_identifier_onherkenbaar():
@@ -175,4 +175,4 @@ def test_live_meb_richtlijn():
         normen = adapter.zoek_op_identifier("Richtlijn 2011/92/EU")
     finally:
         adapter.close()
-    assert normen and normen[0].vindplaats == "PB L 26 van 28.1.2012"
+    assert normen and normen[0].vindplaats == "Pb.L. 28 januari 2012, 1"

@@ -288,7 +288,7 @@ def norm_uit_cellar(rij: dict[str, str], celex: str, url: str) -> Norm | None:
         datum=lees_datum(rij.get("datum")) or _parse_datum(opschrift),
         celex=celex,
         eli=rij.get("eli") or None,
-        vindplaats=pb_vindplaats(rij.get("oj_id"), rij.get("oj_datum")),
+        vindplaats=pb_vindplaats(rij.get("oj_id"), rij.get("oj_datum") or rij.get("oj_akte_datum")),
         url=url,
     )
 

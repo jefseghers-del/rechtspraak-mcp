@@ -43,8 +43,9 @@ class Treffer(BaseModel):
     verwijzing: str | None = Field(
         default=None,
         description=(
-            "Voorstel van VENA-voetnootverwijzing, uitsluitend opgebouwd uit de velden "
-            "hierboven (zie docs/verwijsregels.md); vóór gebruik verifiëren via de bron-URL."
+            "Voorstel van voetnootverwijzing volgens vena.be (RS1/RS2), uitsluitend opgebouwd "
+            "uit de velden hierboven; partijnaam en vindplaats vult de gebruiker aan. Vóór "
+            "gebruik verifiëren via de bron-URL."
         ),
     )
 
@@ -121,13 +122,13 @@ class Norm(BaseModel):
     celex: str | None = Field(default=None, description="CELEX-nummer (EUR-Lex), bv. '32011L0092'.")
     eli: str | None = Field(default=None, description="ELI-identifier of -URL, indien beschikbaar.")
     vindplaats: str | None = Field(
-        default=None, description="Officiële vindplaats, bv. 'PB L 26 van 28.1.2012' of BS-datum."
+        default=None, description="Officiële vindplaats in VENA-vorm, bv. 'Pb.L. 28 januari 2012, 1' of 'BS 1 oktober 2014'."
     )
     url: str = Field(description="Aanklikbare deeplink naar de brontekst, ter controle.")
     verwijzing: str | None = Field(
         default=None,
         description=(
-            "Voorstel van VENA-verwijzing (wetgevingsvorm), opgebouwd uit de velden "
+            "Voorstel van verwijzing volgens vena.be (WG2/WG3), opgebouwd uit de velden "
             "hierboven; vóór gebruik verifiëren via de bron-URL."
         ),
     )

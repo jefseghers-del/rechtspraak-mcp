@@ -2,7 +2,7 @@
 
 > Betaversie — geen product, geen garantie, geen aansprakelijkheid. Deze software is een experimenteel hulpmiddel in ontwikkeling, geen commercieel product of dienst. Ze wordt kosteloos aangeboden zoals ze is, zonder enige uitdrukkelijke of stilzwijgende garantie, onder meer over juistheid, volledigheid, actualiteit of geschiktheid voor een bepaald doel. De resultaten zijn een geautomatiseerde opvraging van publieke rechtspraak- en wetgevingsbronnen; ze zijn geen juridisch advies en vervangen geen raadpleging van de officiële bron of een eigen juridische analyse. Een zoektreffer of fragment kan aanslaan op wat een partij aanvoert in plaats van op het oordeel van het rechtscollege: citeer alleen na controle in de officiële bron. Nul treffers betekent niet dat een uitspraak of norm niet bestaat. De gebruiker is zelf volledig verantwoordelijk voor het controleren van de resultaten en voor elk gebruik dat ervan wordt gemaakt, ook voor het naleven van de gebruiksvoorwaarden van de geraadpleegde bronnen. De auteur is niet aansprakelijk voor schade die voortvloeit uit het gebruik van de software of de resultaten.
 
-Opgevraagd op 18 september 2026, 13:55, met BE-rechtspraak 0.1.0 en de standaardinstellingen van de bundel.
+Opgevraagd op 18 september 2026, 14:53, met BE-rechtspraak 0.1.1 en de standaardinstellingen van de bundel.
 
 ## De vraag
 
@@ -23,10 +23,10 @@ bron-URL.
 | ECLI | ECLI:EU:C:2004:482 |
 | Bron-URL | https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=ecli:ECLI:EU:C:2004:482 |
 
-**Voorstel van VENA-verwijzing** (partijnaam en tijdschriftvindplaats levert de bron niet;
-vul die zelf aan en sluit af met een punt):
+**Voorstel van verwijzing volgens vena.be** (partijnaam en tijdschriftvindplaats levert de
+bron niet; vul die zelf aan):
 
-    HvJ 7 september 2004, nr. C-127/02, ECLI:EU:C:2004:482, https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=ecli:ECLI:EU:C:2004:482
+    HvJ 7 september 2004, C-127/02, ECLI:EU:C:2004:482.
 
 ## 2. `haal_uitspraak("https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=ecli:ECLI:EU:C:2004:482", "hvj")`
 
@@ -82,12 +82,12 @@ Integrale tekst: 50.692 tekens (niet opgenomen). Beoordelend deel: 27.327 tekens
 | Opschrift | Richtlijn 92/43/EEG van de Raad van 21 mei 1992 inzake de instandhouding van de natuurlijke habitats en de wilde flora en fauna |
 | CELEX | 31992L0043 |
 | ELI | http://data.europa.eu/eli/dir/1992/43/oj |
-| Vindplaats | PB L 206 van 22.7.1992 |
+| Vindplaats | Pb.L. 22 juli 1992, 7 |
 | Bron-URL | https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:31992L0043 |
 
-**Voorstel van VENA-verwijzing:**
+**Voorstel van verwijzing volgens vena.be:**
 
-    Richtl.Raad 92/43/EEG, 21 mei 1992 inzake de instandhouding van de natuurlijke habitats en de wilde flora en fauna, PB L 206 van 22.7.1992, https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:31992L0043
+    Richtlijn 92/43/EEG van de Raad van 21 mei 1992 inzake de instandhouding van de natuurlijke habitats en de wilde flora en fauna, Pb.L. 22 juli 1992, 7, http://data.europa.eu/eli/dir/1992/43/oj.
 
 ---
 

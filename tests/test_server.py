@@ -93,7 +93,7 @@ def test_verwijzing_wordt_ingevuld_op_treffers():
     )
     assert treffer.verwijzing is None
     _met_verwijzing([treffer])
-    assert treffer.verwijzing.startswith("RvVb 17 januari 2023, nr. RvVb-A-2223-0431, ")
+    assert treffer.verwijzing.startswith("RvVb 17 januari 2023, RvVb-A-2223-0431, ")
 
 
 def test_verwijzing_overschrijft_bestaande_waarde_niet():

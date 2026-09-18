@@ -157,16 +157,20 @@ uitdrukkelijk om alleen uit het beoordelende deel te citeren.
 
 **Arrest, conclusie of fiche.** Juportal bevat naast arresten ook conclusies van het openbaar ministerie
 en samenvattingen (fiches). Een conclusie is geen uitspraak van het Hof: de connector herkent ze, geeft er
-geen "beoordelend deel" voor en stelt als voetnoot "Concl. OM bij Cass. …" voor (vul de naam van de
-magistraat zelf aan). Citeer het oordeel van het Hof altijd uit het arrest.
+geen "beoordelend deel" voor en stelt een voetnoot voor in de vorm die VENA voor conclusies voorschrijft:
+"[FAMILIENAAM I.], 'Conclusie bij Cass. …', ECLI". Vul de naam van de magistraat zelf in. Citeer het
+oordeel van het Hof altijd uit het arrest.
 
 **Nul treffers betekent niet: bestaat niet.** De connector geeft alleen wat de bron teruggeeft. Vindt hij
 niets, dan zegt hij waarom (bron uit, nummer niet herkend, tijdslimiet, botcontrole) en geeft hij een link
 om zelf te zoeken. Claude vult niets aan uit zijn geheugen.
 
-**De voetnoot is een voorstel.** De VENA-verwijzing bevat alleen wat de bron levert. Partijnaam en
-tijdschriftvindplaats ontbreken; vul die zelf aan en sluit af met een punt. Bij arresten van de Raad van
-State via Juportal staat soms het rolnummer waar het arrestnummer hoort: controleer het nummer.
+**De voetnoot is een voorstel.** De verwijzing volgt de regels van [vena.be](https://vena.be), maar bevat
+alleen wat de bron levert, bv. "Cass. 5 december 2016, C.16.0150.N, ECLI:BE:CASS:2016:ARR.20161205.2." of
+"Richtlijn 92/43/EEG van de Raad van 21 mei 1992 inzake …, Pb.L. 22 juli 1992, 7,
+http://data.europa.eu/eli/dir/1992/43/oj." Partijnaam, tijdschriftvindplaats en een eventuele noot of
+conclusie ontbreken; vul die zelf aan. Bij RvVb-arresten ontbreekt de datum soms, omdat de bron die niet
+meegeeft; neem ze dan over uit het arrest.
 
 **EU-wetgeving: de oorspronkelijke tekst, niet de geconsolideerde.** De connector geeft een richtlijn of
 verordening zoals ze in het Publicatieblad verscheen, zonder latere wijzigingen. Controleer de geldende

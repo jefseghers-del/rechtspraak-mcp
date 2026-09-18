@@ -152,11 +152,17 @@ def _parse_datum(iso: str | None) -> date | None:
 
 
 def _vindplaats_uit_bsdatum(bsdatum: str | None) -> str | None:
-    """Bouw "BS <d.m.jjjj>" uit het BSDatum-veld, of None als dat ontbreekt."""
+    """Bouw "BS <datum voluit>" (VENA, WG2) uit het BSDatum-veld, of None.
+
+    Een onmogelijke datum (de API geeft soms 0001-01-01 als lege waarde; het Belgisch
+    Staatsblad bestaat sinds 1831) wordt niet als vindplaats doorgegeven.
+    """
     d = _parse_datum(bsdatum)
-    if d is None:
+    if d is None or d.year < 1831:
         return None
-    return f"BS {d.day}.{d.month}.{d.year}"
+    maanden = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus",
+               "september", "oktober", "november", "december"]
+    return f"BS {d.day} {maanden[d.month - 1]} {d.year}"
 
 
 def _type_uit_opschrift(opschrift: str) -> str | None:

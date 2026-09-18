@@ -119,6 +119,13 @@ _INSTANTIE_PER_ECLI_CODE = {
     "CASS": "Hof van Cassatie",
     "GHCC": "Grondwettelijk Hof",
     "RVSCE": "Raad van State",
+    # Hoven van beroep (Nederlandstalige en Franstalige codes), vastgesteld in Juportal-resultaten.
+    "HBANT": "Hof van beroep Antwerpen",
+    "HBGNT": "Hof van beroep Gent",
+    "HBBRL": "Hof van beroep Brussel",
+    "CABRL": "Hof van beroep Brussel",
+    "CALIE": "Hof van beroep Luik",
+    "CAMON": "Hof van beroep Bergen",
 }
 
 

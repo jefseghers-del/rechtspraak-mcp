@@ -54,7 +54,7 @@ _CELEX_RE = re.compile(r"^[0-9CE]\d{4}[A-Z]{1,2}\d{4}(?:\([0-9A-Z]+\))?$")
 _CELEX_RECHTSPRAAK_RE = re.compile(r"^6\d{4}[A-Z]{2}\d{4}$")
 _WOORD_RE = re.compile(r"[0-9A-Za-zÀ-ÖØ-öø-ÿ]+(?:-[0-9A-Za-zÀ-ÖØ-öø-ÿ]+)*")
 #: Publicatieblad-identificatie in cdm:work_id_document.
-_OJ_OUD_RE = re.compile(r"^oj:JO([LC])_(\d{4})_(\d{3})([A-Z]?)_")
+_OJ_OUD_RE = re.compile(r"^oj:JO([LC])_(\d{4})_(\d{3})([A-Z]?)_(?:[A-Z]_(\d{4}))?")
 _OJ_NIEUW_RE = re.compile(r"^oj:([LC])_(\d{4})(\d{5})$")
 
 
@@ -100,7 +100,7 @@ def query_werk_op_celex(celex: str) -> str:
         raise ValueError(f"Geen geldige CELEX-vorm: {celex!r}")
     return (
         _CDM
-        + "SELECT ?datum ?titel_nl ?titel_en ?eli ?ecli ?oj_id ?oj_datum WHERE {\n"
+        + "SELECT ?datum ?titel_nl ?titel_en ?eli ?ecli ?oj_id ?oj_datum ?oj_akte_datum WHERE {\n"
         + f'  ?werk cdm:resource_legal_id_celex ?c . FILTER(STR(?c) = "{celex}")\n'
         + "  OPTIONAL { ?werk cdm:work_date_document ?datum }\n"
         + "  OPTIONAL { ?werk cdm:resource_legal_eli ?eli }\n"
@@ -108,6 +108,7 @@ def query_werk_op_celex(celex: str) -> str:
         + '  OPTIONAL { ?werk cdm:work_id_document ?oj_id . FILTER(STRSTARTS(STR(?oj_id), "oj:")) }\n'
         + "  OPTIONAL { ?werk cdm:resource_legal_published_in_official-journal ?pb .\n"
         + "             ?pb cdm:publication_general_date_publication ?oj_datum }\n"
+        + "  OPTIONAL { ?werk cdm:official-journal-act_date_publication ?oj_akte_datum }\n"
         + _titels("werk")
         + "\n} LIMIT 10"
     )
@@ -159,25 +160,30 @@ def lees_datum(waarde: str | None) -> date | None:
         return None
 
 
-def pb_vindplaats(oj_id: str | None, oj_datum: str | None) -> str | None:
-    """Publicatieblad-verwijzing, bv. "PB L 26 van 28.1.2012" of "PB L, 2024/1991, 29.7.2024".
+_MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus",
+            "september", "oktober", "november", "december"]
 
-    Alleen uit wat CELLAR effectief meegeeft; zonder datum geen datum, zonder
-    Publicatieblad-identificatie None.
+
+def pb_vindplaats(oj_id: str | None, oj_datum: str | None) -> str | None:
+    """Vindplaats in het Publicatieblad in VENA-vorm (WG3): "Pb.L. 28 januari 2012, 1".
+
+    De reeks (L/C) en de beginpagina komen uit de Publicatieblad-identificatie van CELLAR
+    ("oj:JOL_2012_026_R_0001_01": reeks L, pagina 1); sinds oktober 2023 verschijnt elke
+    akte afzonderlijk ("oj:L_202401991") en is er geen paginanummer. De datum is die van het
+    Publicatieblad. Alleen uit wat CELLAR effectief meegeeft: zonder datum geen vindplaats
+    (VENA vermeldt het nummer van het Publicatieblad niet, dus de datum is onmisbaar).
     """
-    if not oj_id:
-        return None
     d = lees_datum(oj_datum)
-    datum = f"{d.day}.{d.month}.{d.year}" if d else None
+    if not oj_id or d is None:
+        return None
+    datum = f"{d.day} {_MAANDEN[d.month - 1]} {d.year}"
     m = _OJ_OUD_RE.match(oj_id)
     if m:
-        reeks, nummer = m.group(1), int(m.group(3))
-        basis = f"PB {reeks} {nummer}{m.group(4)}"
-        return f"{basis} van {datum}" if datum else basis
+        pagina = f", {int(m.group(5))}" if m.group(5) else ""
+        return f"Pb.{m.group(1)}. {datum}{pagina}"
     m = _OJ_NIEUW_RE.match(oj_id)
     if m:
-        basis = f"PB {m.group(1)}, {m.group(2)}/{int(m.group(3))}"
-        return f"{basis}, {datum}" if datum else basis
+        return f"Pb.{m.group(1)}. {datum}"
     return None
 
 

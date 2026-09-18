@@ -134,7 +134,7 @@ def test_zoek_identifier_gevuld_pad_met_verwijzing(nep_adapter):
     assert t["snippet"] is None
     assert t["url"].startswith("https://www.dbrc.be/")
     # De VENA-verwijzing wordt server-side ingevuld en meegeserialiseerd.
-    assert t["verwijzing"].startswith("RvVb 17 januari 2023, nr. RvVb-A-2223-0431, ")
+    assert t["verwijzing"].startswith("RvVb 17 januari 2023, RvVb-A-2223-0431, ")
     assert set(t) == {
         "bron",
         "instantie",

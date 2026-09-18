@@ -392,7 +392,7 @@ def _met_beoordeling(uitspraak: Uitspraak) -> Uitspraak:
         uitspraak.segmentatie = (
             "Dit is een conclusie van het openbaar ministerie, geen uitspraak van het Hof: er "
             "is geen oordeel van het rechtscollege in te citeren. Citeer ze als conclusie "
-            "(VENA: 'Concl. FAMILIENAAM I. bij Cass. <datum>, ...'), en zoek voor het oordeel "
+            "(VENA RS2: \"FAMILIENAAM I., 'Conclusie bij Cass. <datum>, <nummer>', ECLI.\"), en zoek voor het oordeel "
             "het arrest van dezelfde dag en hetzelfde rolnummer op."
         )
         return uitspraak

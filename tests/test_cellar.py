@@ -40,10 +40,11 @@ def test_query_zoek_wetgeving_vorm():
 @pytest.mark.parametrize(
     ("oj_id", "oj_datum", "verwacht"),
     [
-        ("oj:JOL_2012_026_R_0001_01", "2012-01-28", "PB L 26 van 28.1.2012"),
-        ("oj:JOL_2012_026_R_0001_01", None, "PB L 26"),
-        ("oj:L_202401991", "2024-07-29", "PB L, 2024/1991, 29.7.2024"),
-        ("oj:L_202401991", None, "PB L, 2024/1991"),
+        ("oj:JOL_2012_026_R_0001_01", "2012-01-28", "Pb.L. 28 januari 2012, 1"),
+        ("oj:JOL_1992_206_R_0007_01", "1992-07-22", "Pb.L. 22 juli 1992, 7"),
+        ("oj:JOC_2006_331_R_0009_01", "2006-12-30", "Pb.C. 30 december 2006, 9"),
+        ("oj:L_202401991", "2024-07-29", "Pb.L. 29 juli 2024"),
+        ("oj:JOL_2012_026_R_0001_01", None, None),  # zonder datum geen VENA-vindplaats
         (None, "2012-01-28", None),
         ("oj:iets-anders", None, None),
     ],
@@ -83,7 +84,7 @@ def test_onbekende_ecli_geeft_none():
 def test_werk_op_celex():
     rij = nep_cellar().werk_op_celex("32011L0092")
     assert rij["eli"] == "http://data.europa.eu/eli/dir/2011/92/oj"
-    assert C.pb_vindplaats(rij["oj_id"], rij["oj_datum"]) == "PB L 26 van 28.1.2012"
+    assert C.pb_vindplaats(rij["oj_id"], rij["oj_datum"]) == "Pb.L. 28 januari 2012, 1"
 
 
 def test_tekst_nederlands_en_terugval_op_engels():

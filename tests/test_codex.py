@@ -71,7 +71,7 @@ def test_parse_zoekrespons_fixture():
     assert n.type == "decreet"  # prefixlezing van het Zoeken-opschrift
     assert n.opschrift.startswith("Decreet tot wijziging van verschillende decreten")
     assert n.datum == date(2026, 3, 6)
-    assert n.vindplaats == "BS 27.3.2026"  # uit BSDatum "2026-03-27T00:00:00Z"
+    assert n.vindplaats == "BS 27 maart 2026"  # uit BSDatum "2026-03-27T00:00:00Z" (VENA: datum voluit)
     assert n.nummer is None  # het zoekendpoint geeft geen numac mee
     assert n.url == PORTAAL_URL
 
@@ -108,7 +108,7 @@ def test_parse_document_fixture():
     # het detail-opschrift mist het typewoord; dat wordt bijgeplakt
     assert n.opschrift.startswith("Decreet tot wijziging van verschillende decreten")
     assert n.datum == date(2026, 3, 6)
-    assert n.vindplaats == "BS 27.3.2026"
+    assert n.vindplaats == "BS 27 maart 2026"
     assert n.url == PORTAAL_URL
 
 
@@ -304,3 +304,11 @@ def test_live_zoek():
         n.url.startswith("https://codex.vlaanderen.be/Zoeken/Document.aspx?DID=")
         for n in normen
     )
+
+
+def test_onmogelijke_bs_datum_geeft_geen_vindplaats():
+    # De API geeft soms 0001-01-01 als lege waarde; dat werd vroeger "BS 1.1.1".
+    from rechtspraak_mcp.wetgeving.codex import _vindplaats_uit_bsdatum
+
+    assert _vindplaats_uit_bsdatum("0001-01-01T00:00:00Z") is None
+    assert _vindplaats_uit_bsdatum("2014-10-23T00:00:00Z") == "BS 23 oktober 2014"

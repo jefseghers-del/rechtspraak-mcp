@@ -59,11 +59,14 @@ nooit geraden. Het veld `segmentatie` beschrijft ook wat er is weggelaten en waa
 
 ### VENA-verwijzing
 
-Het veld `verwijzing` volgt de VENA-verwijsregels ([docs/verwijsregels.md](docs/verwijsregels.md)), maar
-alleen met wat de bron levert. Partijnaam en tijdschriftvindplaats ontbreken dus; vul die zelf aan en sluit
-de voetnoot af met een punt. Voorbeeld:
+Het veld `verwijzing` volgt de regels van [vena.be](https://vena.be) (RS1 en RS2 voor rechtspraak en
+conclusies, WG2 en WG3 voor Belgische en Europese normen; samenvatting in
+[docs/verwijsregels.md](docs/verwijsregels.md)), maar alleen met wat de bron levert. Partijnaam,
+tijdschriftvindplaats en noot ontbreken dus; vul die zelf aan. Een URL staat er alleen in als er geen ECLI of
+ELI is; de bron-URL staat altijd in het veld `url`. Voorbeelden:
 
-    HvJ 7 september 2004, nr. C-127/02, ECLI:EU:C:2004:482, https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=ecli:ECLI:EU:C:2004:482
+    HvJ 7 september 2004, C-127/02, ECLI:EU:C:2004:482.
+    Richtlijn 92/43/EEG van de Raad van 21 mei 1992 inzake de instandhouding van de natuurlijke habitats en de wilde flora en fauna, Pb.L. 22 juli 1992, 7, http://data.europa.eu/eli/dir/1992/43/oj.
 
 ---
 
