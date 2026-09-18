@@ -12,12 +12,15 @@ docs/verwijsregels.md:
 * RS2 conclusie OM of advocaat-generaal: ``FAMILIENAAM I., 'Conclusie bij Cass. <datum>,
   <nummer>', ECLI.``
 * WG2 interne normen: ``aard (afgekort, met orgaan) + datum + rest van het opschrift, BS
-  <datum voluit>, ELI.``, bv. ``Decr.Vl. 4 april 2014 betreffende ..., BS 1 oktober 2014.``
+  <datum voluit>, ELI (of URL).``, bv. ``Decr.Vl. 4 april 2014 betreffende ..., BS 1 oktober 2014, <ELI>.``
 * WG3 Europese normen: het opschrift voluit (aard niet afgekort), ``Pb.L. <datum voluit>,
   <pagina>, ELI.``
 * Afkortingen van rechtscolleges en normen volgens de VENA-lijsten; elke voetnoot eindigt
-  met een punt (algemene regel 5); een URL alleen als er geen ECLI of ELI is (regel 10:
-  alleen minder bekende URL's).
+  met een punt (algemene regel 5).
+* URL: bewuste afwijking van VENA-regel 10.1 (alleen minder bekende URL's). De connector
+  zet de bron-URL achteraan wanneer er geen ECLI of ELI is, ook bij veelgebruikte
+  databanken (DBRC, RvS zonder ECLI, EUR-Lex zonder ELI, Vlaamse Codex), met het oog op
+  verificatie. Naast een ECLI of ELI komt geen URL.
 
 Anti-hallucinatie: de verwijzing wordt uitsluitend opgebouwd uit velden die de bron
 effectief teruggaf. Ontbrekende elementen (partijnaam, tijdschriftvindplaats, de naam van
@@ -212,4 +215,5 @@ def _vena_belgische_norm(norm: Norm) -> str | None:
         kop = f"{rest} ({_datum_voluit(norm.datum)})"
     else:
         return None
-    return _met_punt([kop, norm.vindplaats, norm.eli])
+    # Bewuste afwijking van VENA-regel 10.1: zonder ELI (bv. de Vlaamse Codex) de bron-URL.
+    return _met_punt([kop, norm.vindplaats, norm.eli or norm.url])

@@ -71,7 +71,8 @@ def test_vena_voorbeeld_raad_van_state_nummer_uit_ecli():
 
 
 def test_raad_van_state_zonder_ecli_houdt_de_url():
-    # Regel 10: een URL alleen als er geen algemeen bekende identificatie (ECLI) is.
+    # Bewuste afwijking van VENA-regel 10.1: URL wanneer er geen ECLI of ELI is, ook bij een
+    # veelgebruikte databank, met het oog op verificatie. Naast een ECLI komt geen URL.
     t = _treffer(bron="raadvanstate", instantie="Raad van State", titel="RvS-arrest nr. 250.123",
                  rolnummer="250.123", url="https://www.raadvst-consetat.be/arr.php?nr=250123&l=nl")
     assert vena_verwijzing(t) == "RvS, 250.123, https://www.raadvst-consetat.be/arr.php?nr=250123&l=nl."
@@ -191,15 +192,18 @@ def test_vena_voorbeeld_wet_via_justel():
 def test_besluit_vlaamse_regering_en_kb_afkortingen():
     bvr = _be(type="besluit van de vlaamse regering", datum=date(2021, 5, 7),
               opschrift="Besluit van de Vlaamse Regering tot uitvoering van het decreet", vindplaats="BS 1 juni 2021")
-    assert vena_verwijzing_norm(bvr) == "B.Vl.Reg. 7 mei 2021 tot uitvoering van het decreet, BS 1 juni 2021."
+    assert vena_verwijzing_norm(bvr) == (
+        "B.Vl.Reg. 7 mei 2021 tot uitvoering van het decreet, BS 1 juni 2021, "
+        "https://codex.vlaanderen.be/Zoeken/Document.aspx?DID=1."
+    )
     kb = _be(bron="justel", type="koninklijk besluit", datum=date(1999, 3, 18),
              opschrift="Koninklijk besluit betreffende de medische hulpmiddelen", vindplaats="BS 14 april 1999")
-    assert vena_verwijzing_norm(kb) == "KB 18 maart 1999 betreffende de medische hulpmiddelen, BS 14 april 1999."
+    assert vena_verwijzing_norm(kb).startswith("KB 18 maart 1999 betreffende de medische hulpmiddelen, BS 14 april 1999, ")
 
 
 def test_decreet_via_justel_zonder_orgaan():
     n = _be(bron="justel", type="decreet", datum=date(2020, 1, 1), opschrift="Decreet over iets")
-    assert vena_verwijzing_norm(n) == "Decr. 1 januari 2020 over iets."
+    assert vena_verwijzing_norm(n).startswith("Decr. 1 januari 2020 over iets, https://")
 
 
 def test_vena_voorbeeld_grondwettelijk_hof_nummer_uit_ecli():
@@ -216,3 +220,13 @@ def test_verzamelnaam_juportal_wordt_rechtscollege_of_invulveld():
     rb = _treffer(bron="juportal", instantie="Juportal (federale rechtspraak)", datum=date(2026, 1, 29),
                   ecli="ECLI:BE:ORANT:2026:JUG.20260129.1", url="u")
     assert vena_verwijzing(rb).startswith("[rechtscollege] 29 januari 2026, ")
+
+
+def test_codex_norm_zonder_eli_krijgt_de_codex_link():
+    # Bewuste afwijking van VENA-regel 10.1: zonder ELI de bron-URL, met het oog op verificatie.
+    n = _be(type="decreet", datum=date(2014, 4, 25), vindplaats="BS 23 oktober 2014",
+            opschrift="Decreet betreffende de omgevingsvergunning")
+    assert vena_verwijzing_norm(n) == (
+        "Decr.Vl. 25 april 2014 betreffende de omgevingsvergunning, BS 23 oktober 2014, "
+        "https://codex.vlaanderen.be/Zoeken/Document.aspx?DID=1."
+    )
