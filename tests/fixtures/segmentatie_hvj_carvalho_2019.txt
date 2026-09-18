@@ -1,0 +1,358 @@
+ORDER OF THE GENERAL COURT (Second Chamber)
+8 May 2019 (
+*
+)
+(Action for annulment and damages — Environment — Greenhouse gas emissions — 2030 climate and energy package — Directive (EU) 2018/410 — Regulation (EU) 2018/842 — Regulation (EU) 2018/841 — Lack of individual concern — Inadmissibility)
+In Case T‑330/18,
+A. C.,
+residing in [woonplaats weggelaten] (Portugal), and the other applicants whose names are set out in the annex, (
+1
+) represented by G. Winter, Professor, R. Verheyen, lawyer, and H. Leith, Barrister,
+applicants,
+v
+European Parliament,
+represented by L. Darie and A. Tamás, acting as Agents,
+and
+Council of the European Union,
+represented by M. Moore and M. Simm, acting as Agents,
+defendants,
+APPLICATION under Article 263 TFEU seeking, first, annulment in part of Directive (EU) 2018/410 of the European Parliament and of the Council of 14 March 2018 amending Directive 2003/87/EC to enhance cost-effective emission reductions and low-carbon investments, and Decision (EU) 2015/1814 (OJ 2018 L 76, p. 3), in particular Article 1 thereof, Regulation (EU) 2018/842 of the European Parliament and of the Council of 30 May 2018 on binding annual greenhouse gas emission reductions by Member States from 2021 to 2030 contributing to climate action to meet commitments under the Paris Agreement and amending Regulation (EU) No 525/2013 (OJ 2018 L 156, p. 26), in particular Article 4(2) thereof and Annex I thereto, and Regulation (EU) 2018/841 of the European Parliament and of the Council of 30 May 2018 on the inclusion of greenhouse gas emissions and removals from land use, land use change and forestry in the 2030 climate and energy framework, and amending Regulation (EU) No 525/2013 and Decision No 529/2013/EU (OJ 2018 L 156, p. 1), in particular Article 4 thereof, and, second, compensation under Articles 268 and 340 TFEU in the form of an injunction for the damage that the applicants claim to have suffered,
+THE GENERAL COURT (Second Chamber),
+composed of M. Prek, President, F. Schalin (Rapporteur) and M.J. Costeira, Judges,
+Registrar: E. Coulon,
+makes the following
+Order
+Background to the dispute
+1
+The applicants, Mr A. C. and the other persons whose names are set out in the annex, all of whom operate in the agricultural or tourism sectors, are 36 individuals in families from various countries in the European Union (Germany, France, Italy, Portugal and Romania) and the rest of the world (Kenya, Fiji), and an association governed by Swedish law, which represents young indigenous Sami.
+2
+The European Union ratified the Kyoto Protocol to the United Nations Framework Convention on Climate Change (UNFCCC) by Council Decision 2002/358/EC of 25 April 2002 concerning the approval, on behalf of the European Community, of the Kyoto Protocol to the United Nations Framework Convention on Climate Change and the joint fulfilment of commitments thereunder (OJ 2002 L 130, p. 1). As a result, the European Union adopted various measures concerning a scheme for greenhouse gas emission allowance trading, measures relating to effort sharing between the Member States, carbon capture and storage, the quality of petrol and diesel fuels, and reducing CO
+2
+emissions for motor vehicles, and measures relating to accounting rules on greenhouse gas emissions and removals from activities relating to land use, land use change and forestry.
+3
+In view of the expiry of the second commitment period of the Kyoto Protocol in 2020, the Paris Agreement was adopted by the Conference of the Parties to the UNFCCC in December 2015, aiming to limit the global temperature increase to between 1.5 °C  and 2 °C above pre-industrial levels. In 2016 the European Union ratified that agreement (Council Decision (EU) 2016/1841 of 5 October 2016 on the conclusion, on behalf of the European Union, of the Paris Agreement adopted under the United Nations Framework Convention on Climate Change (OJ 2016 L 282, p. 1)).
+4
+The Paris Agreement focuses on the concept of ‘nationally determined contributions’ (NDCs). Article 4(2) thereof provides as follows:
+‘Each Party shall prepare, communicate and maintain successive nationally determined contributions that it intends to achieve. Parties shall pursue domestic mitigation measures, with the aim of achieving the objectives of such contributions.’
+5
+The European Union and its Member States have committed jointly to complying, by means of their NDCs, with a binding target of reducing greenhouse gas emissions within the European Union by at least 40% by 2030 in relation to 1990 levels.
+6
+The following acts (collectively, ‘the contested acts’ or ‘the legislative package’) are the acts whereby the European Union seeks to comply with those NDCs:
+–        Directive (EU) 2018/410 of the European Parliament and of the Council of 14 March 2018 amending Directive 2003/87/EC to enhance cost-effective emission reductions and low-carbon investments, and Decision (EU) 2015/1814 (OJ 2018 L 76, p. 3);
+–        Regulation (EU) 2018/841 of the European Parliament and of the Council of 30 May 2018 on the inclusion of greenhouse gas emissions and removals from land use, land use change and forestry in the 2030 climate and energy framework, and amending Regulation (EU) No 525/2013 and Decision No 529/2013/EU (OJ 2018 L 156, p. 1);
+–        Regulation (EU) 2018/842 of the European Parliament and of the Council of 30 May 2018 on binding annual greenhouse gas emission reductions by Member States from 2021 to 2030 contributing to climate action to meet commitments under the Paris Agreement and amending Regulation (EU) No 525/2013 (OJ 2018 L 156, p. 26).
+7
+Directive 2003/87/EC of the European Parliament and of the Council of 13 October 2003 establishing a scheme for greenhouse gas emission allowance trading within the Community and amending Council Directive 96/61/EC (OJ 2003 L 275, p. 32) established a scheme for greenhouse gas emission allowance trading within the European Union, based on the principle of capping and trading emission allowances.
+8
+Directive 2003/87 as amended by Directive 2018/410 enhances the scheme for greenhouse gas emission allowance trading within the European Union for the period from 2021 to 2030 by increasing the rate of annual allowance reductions from 1.74% to 2.2% from 2021 onwards. Article 9 of Directive 2003/87, entitled ‘Union-wide quantity of allowances’, provides as follows in paragraph 1 thereof:
+‘The Union-wide quantity of allowances issued each year starting in 2013 shall decrease in a linear manner beginning from the mid-point of the period from 2008 to 2012.  The quantity shall decrease by a linear factor of 1.74% compared to the average annual total quantity of allowances issued by Member States in accordance with the Commission Decisions on their national allocation plans for the period from 2008 to 2012 …
+Starting in 2021, the linear factor shall be 2.2%.’
+9
+Regulation 2018/841 sets binding commitments for all Member States so as to ensure that accounted emissions from land use are offset  in their entirety by an equivalent removal of CO
+2
+from the atmosphere by means of activities carried out in the land use, land use change and forestry sector.
+10
+Article 4 of Regulation 2018/841 states that ‘for the periods from 2021 to 2025 and from 2026 to 2030, taking into account the flexibilities provided for in Articles 12 and 13, each Member State shall ensure that emissions do not exceed removals, calculated as the sum of total emissions and total removals on its territory in all of the land accounting categories referred to in Article 2 combined, as accounted in accordance with this Regulation’.
+11
+According to Article 1 thereof, Regulation 2018/842 ‘lays down obligations on Member States with respect to their minimum contributions for the period from 2021 to 2030 to fulfilling the Union’s target of reducing its greenhouse gas emissions by 30% below 2005 levels in 2030 in the sectors covered by Article 2 of this Regulation and contributes to achieving the objectives of the Paris Agreement’. That regulation applies to emissions from economic sectors not falling within the scope of Directive 2003/87 or Regulation 2018/841.
+12
+Article 4 of Regulation 2018/842, entitled ‘Annual emission levels for the period from 2021 to 2030’, provides as follows:
+‘1.      Each Member State shall, in 2030, limit its greenhouse gas emissions at least by the percentage set for that Member State in Annex I in relation to its greenhouse gas emissions in 2005, determined pursuant to paragraph 3 of this Article.
+2.      Subject to the flexibilities provided for in Articles 5, 6 and 7 of this Regulation, to the adjustment pursuant to Article 10(2) of this Regulation and taking into account any deduction resulting from the application of Article 7 of Decision No 406/2009/EC, each Member State shall ensure that its greenhouse gas emissions in each year between 2021 and 2029 do not exceed the limit defined by a linear trajectory, starting on the average of its greenhouse gas emissions during 2016, 2017 and 2018 determined pursuant to paragraph 3 of this Article and ending in 2030 on the limit set for that Member State in Annex I to this Regulation. The linear trajectory of a Member State shall start either at five-twelfths of the distance from 2019 to 2020 or in 2020, whichever results in a lower allocation for that Member State.
+3.      The Commission shall adopt implementing acts setting out the annual emission allocations for the years from 2021 to 2030 in terms of tonnes of CO
+2
+equivalent as specified in paragraphs 1 and 2 of this Article. For the purposes of those implementing acts, the Commission shall carry out a comprehensive review of the most recent national inventory data for the years 2005 and 2016 to 2018 submitted by Member States pursuant to Article 7 of Regulation (EU) No 525/2013.
+Those implementing acts shall indicate the value for the 2005 greenhouse gas emissions of each Member State used to determine the annual emission allocations specified in paragraphs 1 and 2.
+4.      Those implementing acts shall also specify, based on the percentages notified by Member States under Article 6(3), the total quantities that may be taken into account for a Member State’s compliance under Article 9 between 2021 and 2030. If the sum of all Member States’ total quantities were to exceed the collective total of 100 million, the total quantities for each Member State shall be reduced on a pro rata basis so that the collective total is not exceeded …’
+Procedure and forms of order sought
+13
+On 23 May 2018 the applicants brought the present action.
+14
+By separate document lodged at the Court Registry on 16 October 2018, the Council of the European Union raised a plea of inadmissibility in relation to the action.
+15
+By separate document lodged at the Court Registry on 20 October 2018, the European Parliament also raised a plea of inadmissibility.
+16
+As a result, the processing of the applications for leave to intervene lodged by Climate Action Network Europe on 20 September 2018, WeMove Europe SCE mbH on 20 September 2018 and Arbeitsgemeinschaft Bäuerliche Landwirtschaft on 24 September 2018 in support of the form of order sought by the applicants, and by the European Commission on 4 October 2018 in support of the form of order sought by the Parliament and the Council, was suspended in accordance with Article 144(3) of the Rules of Procedure of the General Court.
+17
+On 10 December 2018 the applicants submitted their observations regarding the plea of inadmissibility raised by the Parliament and the Council.
+18
+In the application, the applicants claim that the Court should:
+–        declare that the legislative package regarding greenhouse gas emissions is unlawful in so far as it permits the emission between 2021 and 2030 of a quantity of greenhouse gases corresponding to 80% of 1990 levels in 2021, decreasing to 60% of 1990 levels in 2030;
+–        annul the legislative package regarding greenhouse gas emissions in so far as it sets targets to reduce greenhouse gas emissions by 2030 by 40% compared to 1990 levels, in particular  Article 1 of Directive 2018/410, Article 4(2) of Regulation 2018/842 and Annex I thereto, and Article 4 of Regulation 2018/841;
+–        order the Council and the Parliament to adopt measures under the legislative package regarding greenhouse gas emissions requiring a reduction in greenhouse gas emissions by 2030 by at least 50% to 60% compared to their 1990 levels, or by such higher level of reduction as the Court shall deem appropriate;
+–        in the alternative, in the event that the decision to annul the contested acts is adopted too late to allow the relevant provisions to be amended before 2021, order that the contested provisions of the legislative package regarding greenhouse gas emissions are to remain in force until a date to be determined by the Court, by which time at the latest they should have been amended by higher-ranking rules of law;
+–        order the Council and the Parliament to pay the costs.
+19
+In the observations regarding the plea of inadmissibility, the applicants claim that the Court should:
+–        reserve its decision on the inadmissibility of the action pursuant to Article 130(7) of the Rules of Procedure;
+–        in the alternative, open the oral part of the procedure in relation to the Council and the Parliament’s plea of inadmissibility;
+–        in any event, regardless of whether the Court opens the oral part of the procedure, reject the plea of inadmissibility.
+20
+The Parliament and the Council contend that the Court should:
+–        dismiss the action as inadmissible;
+–        order the applicants to pay the costs.
+Law
+21
+Under Article 130(1) and (7) of the Rules of Procedure, if the defendant so requests, the Court may give a ruling on inadmissibility or lack of competence without going to the substance of the case. In the present case, as the Parliament and the Council have requested a ruling on inadmissibility, the Court, considering that it has sufficient information from the documents in the case file, hereby decides to give a ruling regarding that request without taking further steps in the proceedings.
+Admissibility of the action
+22
+The applicants seek, first, in the context of the action for annulment under Article 263 TFEU, the annulment in part of Directive  2018/410, in particular Article 1 thereof, Regulation 2018/842, in particular Article 4(2) thereof and Annex I thereto, and Regulation 2018/841, in particular Article 4 thereof, and, second, in the context of non-contractual liability under Articles 268 and 340 TFEU, an injunction obliging the co-legislators to adopt measures ‘requiring a reduction in greenhouse gas emissions by 2030 by at least 50% to 60% compared to their 1990 levels, or by such higher level of reduction as the Court shall deem appropriate’.
+23
+To summarise, regarding the action for annulment, the applicants submit that the Union’s level of ambition is not sufficiently high with regard to reducing greenhouse gas emissions and infringes binding higher-ranking rules of law. They argue that the technical and economic capacity of the European Union extends to reducing those emissions by 50% to 60%, which is why the legislative package must be annulled in so far as it will allow for emissions in 2030 at a level that is higher than 40% to 50% of 1990 levels.
+24
+Regarding the action for damages, the applicants argue that the non-contractual liability of the European Union has been triggered inasmuch as, by failing to comply with higher-ranking rules of law, the European Union has caused them damage for which they request compensation in kind in the form of an injunction. That damage is both current and future and consists in their living conditions being adversely affected, in particular in so far as climate change, to which greenhouse gas emissions directly contribute, curtails their activities and their livelihoods and results in physical damage. As is apparent from the reports of the World Bank and UNICEF (the United Nations Children’s Fund), heatwaves are already causing damage to human health, in particular to children, and to persons whose professions are dependent on moderate temperatures, such as in the agriculture and tourism sectors.
+Admissibility of the claim for annulment
+Arguments of the parties
+25
+The Council contends that, notwithstanding the immense volume of documentation appended to the application, the applicants have not shown that any of the contested acts has affected their legal situation. Indeed, the applicants seek only to show that their factual situation has been, or is likely to be affected. The Council also contends that all the contested acts in fact require or enable both the Member States and the Commission to take action to comply with the basic obligations laid down therein or to go beyond such obligations, so that there is at least some discretion that, in any event, precludes the applicants from being directly concerned. The Council also points to the fact that all the acts concerned were adopted under Article 192 TFEU and that Article 193 TFEU states that the Member States may take more stringent protective measures than those set out in acts adopted under Article 192 TFEU.
+26
+Next, the Council contends that the part of the application relating to individual concern is confused because the applicants disregard the conditions of eligibility for bringing proceedings. In the Council’s view, accepting the applicants’ argument whereby each of them claims that their fundamental rights have been infringed would render the condition of individual concern entirely meaningless.
+27
+The Parliament is also of the view that the contested acts do not directly affect the applicants’ legal situation. In that regard, the Parliament remarks that the contested provisions setting the target levels of greenhouse gas emissions are not, in themselves, capable of affecting the fundamental rights invoked by the applicants. According to the Parliament, in order for those rights to be capable of being affected, the greenhouse gas emissions must first take place,  via authorisations to emit or via the allocation of emission allowances to economic operators. However, the legislative package does not ‘authorise’ any person to emit greenhouse gases. Indeed, it lays down the minimum requirements with which Member States must comply in order to reduce emissions and, accordingly, combat climate change. The Parliament adds that the legislative package also confers  some discretion on the national authorities tasked with its implementation.
+28
+Regarding individual concern, the Parliament contends that the contested provisions are of a general nature and that they can be applied to any natural or legal person and apply to an indeterminate number of natural and legal persons. It maintains that the applicants have not produced the slightest evidence to show that the legislative package would alter the rights that they had acquired prior to the adoption of that package in accordance with the cases giving rise to the judgments of 18 May 1994,
+Codorniu
+v
+Council
+(C‑309/89, EU:C:1994:197), and of 13 March 2008,
+Commission
+v
+Infront WM
+(C‑125/06 P, EU:C:2008:159). In addition, the applicants’ argument that ‘each applicant is affected by climate change … idiosyncratically and is therefore distinguished from all other persons’ is fallacious from a logical perspective. It implies that, besides the applicants, each and every person around the world is individually concerned by the legislative package. However, suggesting that all persons are individually concerned by the contested acts is a blatant contradiction of the case-law criterion resulting from the judgment of 15 July 1963,
+Plaumann
+v
+Commission
+(25/62, EU:C:1963:17), which requires the existence of genuine distinguishing features. Moreover, as regards fundamental rights and effective judicial protection, the Parliament recalls that, according to the case-law, a claim that an act of general application infringes those rules or those rights is not in itself sufficient to establish that the action brought by an individual is admissible, without running the risk of rendering the requirements of the fourth paragraph of Article 263 TFEU meaningless, as long as that alleged infringement does not distinguish the applicant individually just as in the case of the addressee. In that context, the Parliament also recalls that the Treaty on the Functioning of the European Union has established, by Articles 263 and 277 thereof, on the one hand, and Article 267 thereof, on the other, a complete system of legal remedies and procedures designed to ensure judicial review of the legality of acts of the Union.
+29
+Lastly, the Parliament contends that the action is inadmissible because the applicants are seeking the annulment of provisions that cannot be severed from the remainder of the legislative package.
+30
+The applicants maintain that they are directly concerned by the greenhouse gas emission reduction targets laid down by the legislative package. The legislative package directly affects their legal situation, given that, by requiring an insufficient reduction in greenhouse gas emissions and thereby allocating and authorising an excessive volume of emissions, it infringes their fundamental rights as enshrined in the Charter of Fundamental Rights of the European Union, namely the right to life (Article 2), the right to the integrity of the person (Article 3), the rights of the child (Article 24), the right to engage in work and to pursue a freely chosen or accepted occupation (Article 15), the freedom to conduct a business (Article 16), the right to property (Article 17) and the right to equal treatment (Articles 20 and 21).
+31
+The applicants argue that they are also individually concerned. In that regard, they emphasise that they are each claiming an infringement of their individual fundamental rights as listed in paragraph 30 above. The effects of climate change, to which the legislative package contributes, and, accordingly, the infringement of those rights will be unique to and different for each individual. According to the applicants, a farmer affected by drought is in a different situation to a farmer whose land is flooded and made saltier by seawater. Even within a group of farmers affected by drought, each farmer will experience the effects differently.
+32
+In the alternative, the applicants request that the concept of individual concern set out in the judgment of 15 July 1963,
+Plaumann
+v
+Commission
+(25/62, EU:C:1963:17), be interpreted more flexibly. In their view, the case-law criterion arising from that judgment is unsuitable and it is inappropriate to apply it in the present case, given that it reflects an outdated line of case-law manifesting itself in paradoxical outcomes. The more widespread the harmful effects of an act, the more restricted the access to the courts. In other words, the more serious the damage and the higher the number of affected persons, the less judicial protection is available. It follows that there is an obvious shortfall in terms of judicial protection. The applicants thus recall and maintain the following:
+–        their argument is based on the case-law that recognises that infringement of fundamental rights is a ground for individual concern;
+–        if the Courts of the European Union are indeed to be the sole arbiters of the reconciliation of EU measures with fundamental rights, an individual whose fundamental rights are at stake must necessarily have a right of access to those courts;
+–        a broadening in the present case of the narrow interpretation that characterises the criterion set out in the judgment of 15 July 1963,
+Plaumann
+v
+Commission
+(25/62, EU:C:1963:17), would lead to a situation that would be more in line with the
+locus standi
+requirements set out in Article 9(3) of the Convention on Access to Information, Public Participation in Decision-making and Access to Justice in Environmental Matters, signed in Aarhus on 25 June 1998;
+–        a narrow interpretation of the concept of ‘direct and individual concern’ would, if applied in the present case, infringe the guarantee of judicial protection offered by Article 47 of the Charter of Fundamental Rights, pursuant to which ‘everyone whose rights and freedoms guaranteed by the law of the Union are violated has the right to an effective remedy’;
+–        the Parliament’s argument that they have the possibility to obtain an ‘effective remedy’ before a national court is not convincing, given that an action before the national courts is hypothetical and infeasible in the circumstances of the present case; in order to obtain a result sufficient to reduce total EU emissions to a level consistent with the law, each applicant would be obliged to bring proceedings before the courts of all the Member States; in addition, the diversity of judicial procedures and legal remedies means it is almost certain that an effective remedy would be impossible in this case; moreover, an action before a national court hearing a challenge to the measures to reduce greenhouse gas emissions adopted by a Member State cannot give rise to a suitable reference for a preliminary ruling contesting the legislative package.
+Findings of the Court
+33
+As indicated in paragraphs 25 to 29 above, the Parliament and the Council are pleading the inadmissibility of the action for annulment on the ground that, in essence, the applicants do not have standing to bring proceedings under the fourth paragraph of Article 263 TFEU. In their view, the applicants are neither directly nor individually concerned by the legislative package.
+34
+Under the fourth paragraph of Article 263 TFEU, any natural or legal person may institute proceedings against an act addressed to that person or that is of direct and individual concern to them, and against a regulatory act that is of direct concern to them and does not entail implementing measures.
+35
+In the present case, it must be pointed out that the legislative package does not identify the applicants as addressees thereof. In those circumstances, the first scenario in which a natural or legal person has standing to bring proceedings under the fourth paragraph of Article 263 TFEU must be excluded.
+36
+It is therefore necessary to examine whether the second or even the third scenario in which, under the fourth paragraph of Article 263 TFEU, a natural or legal person is to be recognised as having standing to bring an action against an act that is not addressed to them may correspond to the present case. According to the second scenario, an action may be brought if the act is of direct and individual concern to the natural or legal person bringing the action.  According to the third scenario, such a person may bring proceedings against a regulatory act not entailing implementing measures if that act is of direct concern to them (judgments of 19 December 2013,
+Telefónica
+v
+Commission
+, C‑274/12 P, EU:C:2013:852, paragraph 19; of 27 February 2014,
+Stichting Woonpunt and Others
+v
+Commission
+, C‑132/12 P, EU:C:2014:100, paragraph 44; and of 27 February 2014,
+Stichting Woonlinie and Others
+v
+Commission
+, C‑133/12 P, EU:C:2014:105, paragraph 31).
+37
+In the first place, regarding the third scenario referred to in paragraph 36 above, according to which natural or legal persons, such as the applicants, may, under the fourth paragraph of Article 263 TFEU, bring an action against a regulatory act not entailing implementing measures if that act is of direct concern to them, it is necessary to examine whether the acts constituting the legislative package are regulatory acts.
+38
+In that regard, first, it should be borne in mind that, according to the case-law, the meaning of ‘regulatory act’ for the purposes of the fourth paragraph of Article 263 TFEU must be understood as covering all acts of general application apart from legislative acts (judgment of 3 October 2013,
+Inuit Tapiriit Kanatami and Others
+v
+Parliament and Council
+, C‑583/11 P, EU:C:2013:625, paragraphs 60 and 61; order of 6 September 2011,
+Inuit Tapiriit Kanatami and Others
+v
+Parliament and Council
+, T‑18/10, EU:T:2011:419, paragraph 56; and judgment of 25 October 2011,
+Microban International and Microban (Europe)
+v
+Commission
+, T‑262/10, EU:T:2011:623, paragraph 21).
+39
+Second, the test for distinguishing between a legislative act and a regulatory act is based, according to the Treaty on the Functioning of the European Union, on the criterion of the procedure, legislative or not, that led to its adoption (order of 6 September 2011,
+Inuit Tapiriit Kanatami and Others
+v
+Parliament and Council
+, T‑18/10, EU:T:2011:419, paragraph 65).
+40
+In the present case, it should be noted that, as is apparent from the recitals set out in the preamble to the contested acts constituting the legislative package, those acts were adopted on the basis of Article 192(1) TFEU. That article states that the Parliament and the Council, acting in accordance with the ordinary legislative procedure and after consulting the European Economic and Social Committee and the Committee of the Regions, are to decide what action is to be taken by the Union in order to achieve the objectives referred to in Article 191 TFEU. That article concerns the Union’s policy on the environment.
+41
+Therefore, it must be concluded that the three contested acts are legislative acts, not regulatory acts, for the purposes of the case-law cited in paragraph 39 above, which, moreover, is not contested by the applicants.
+42
+Accordingly, and without there being any need to examine whether the other conditions of the third scenario set out in paragraph 36 above, concerning the lack of implementing measures and direct concern on the part of the applicants, are satisfied, it is not possible to establish the admissibility of the present action on that basis.
+43
+In the second place, it is necessary to examine the admissibility of the present action having regard to the second scenario referred to in paragraph 36 above, according to which natural or legal persons, such as the applicants, may bring an action for annulment under the fourth paragraph of Article 263 TFEU against an act that is not addressed to them, provided that that act is of direct and individual concern to them.
+44
+Regarding the plea of inadmissibility raised by the Parliament and the Council on the ground that the applicants are neither directly nor individually concerned by the legislative package, it must first be examined whether the second condition, relating to the individual concern of the applicants, is satisfied. Since the direct concern and individual concern conditions are cumulative (judgment of 3 October 2013,
+Inuit Tapiriit Kanatami and Others
+v
+Parliament and Council
+, C‑583/11 P, EU:C:2013:625, paragraph 76), if the applicants are not individually concerned by the legislative package, it will become unnecessary to enquire whether that package is of direct concern to them (see, to that effect, judgment of 15 July 1963,
+Plaumann
+v
+Commission
+, 25/62, EU:C:1963:17, p. 223).
+45
+According to settled case-law, natural or legal persons satisfy the condition of individual concern only if the contested act affects them by reason of certain attributes that are peculiar to them or by reason of circumstances in which they are differentiated from all other persons, and by virtue of these factors distinguishes them individually just as in the case of the addressee (judgments of 15 July 1963,
+Plaumann
+v
+Commission
+, 25/62, EU:C:1963:17, p. 223; of 3 October 2013,
+Inuit Tapiriit Kanatami and Others
+v
+Parliament and Council
+, C‑583/11 P, EU:C:2013:625, paragraph 72; of 27 February 2014,
+Stichting Woonpunt and Others
+v
+Commission
+, C‑132/12 P, EU:C:2014:100, paragraph 57; and of 27 February 2014,
+Stichting Woonlinie and Others
+v
+Commission
+, C‑133/12 P, EU:C:2014:105, paragraph 44).
+46
+In the present case, it should be observed at the outset that the applicants are claiming an infringement of their fundamental rights. They infer from this that they are individually concerned, given that, although all persons may in principle each enjoy the same right (such as the right to life or the right to work), the effects of climate change and, by extension, the infringement of fundamental rights is unique to and different for each individual.
+47
+Such an argument cannot succeed.
+48
+It is apparent from the case-law that, although it is true that, when adopting an act of general application, the institutions of the Union are required to respect higher-ranking rules of law, including fundamental rights, the claim that such an act infringes those rules or rights is not sufficient in itself to establish that the action brought by an individual is admissible, without running the risk of rendering the requirements of the fourth paragraph of Article 263 TFEU meaningless, as long as that alleged infringement does not distinguish the applicant individually just as in the case of the addressee (see judgment of 2 March 2010,
+Arcelor
+v
+Parliament and Council
+, T‑16/04, EU:T:2010:54, paragraph 103 and the case-law cited).
+49
+The applicants have not established that the contested provisions of the legislative package infringed their fundamental rights and distinguished them individually from all other natural or legal persons concerned by those provisions just as in the case of the addressee.
+50
+It is true that every individual is likely to be affected one way or another by climate change, that issue being recognised by the European Union and the Member States who have, as a result, committed to reducing emissions. However, the fact that the effects of climate change may be different for one person than they are for another does not mean that, for that reason, there exists standing to bring an action against a measure of general application. As can be seen from the case-law cited in paragraph 48 above, a different approach would have the result of rendering the requirements of the fourth paragraph of Article 263 TFEU meaningless and of creating
+locus standi
+for all without the criterion of individual concern within the meaning of the case-law resulting from the judgment of 15 July 1963,
+Plaumann
+v
+Commission
+(25/62, EU:C:1963:17), being fulfilled.
+51
+So far as concerns the association Sáminuorra, it should be pointed out, in the first place, that, like the other applicants and for the same reason, that applicant has not shown that it was individually concerned. In the second place, it is settled case-law that actions for annulment brought by associations have been held to be admissible in three types of situation: firstly, where a legal provision expressly grants a series of procedural powers to trade associations; secondly, where the association represents the interests of its members, who would themselves be entitled to bring proceedings; and, thirdly, where the association is distinguished individually because its own interests as an association are affected, in particular because its negotiating position has been affected by the act in respect of which annulment is sought (see order of 23 November 1999,
+Unión de Pequeños Agricultores
+v
+Council
+, T‑173/98, EU:T:1999:296, paragraph 47 and the case-law cited). In the present case, the association Sáminuorra has not shown that it satisfied one of those conditions.
+52
+Next, as regards the applicants’ argument that the interpretation of the concept of ‘individual concern’ referred to in the fourth paragraph of Article 263 TFEU is incompatible with the fundamental right to effective judicial protection inasmuch as it results in a directly applicable regulation being virtually immune to judicial review, it should be pointed out that the protection conferred by Article 47 of the Charter of Fundamental Rights does not require that an individual should have an unconditional entitlement to bring an action for annulment of such a legislative act of the Union directly before the Courts of the European Union (see, to that effect, judgment of 3 October 2013,
+Inuit Tapiriit Kanatami and Others
+v
+Parliament and Council
+, C‑583/11 P, EU:C:2013:625, paragraph 105).
+53
+Lastly, as is highlighted by the Parliament and the Council, the implementation of the legislative package presupposes that such implementation will be carried out by means of legislative or regulatory provisions by the Commission and the Member States, such as the allocation of allowances and the putting in place of measures to avoid exceeding the limits fixed by each Member State with regard to emissions. In that context, it should be borne in mind that Articles 263 and 277 TFEU, on the one hand, and Article 267 TFEU, on the other, have established a complete system of legal remedies and procedures designed to ensure judicial review of the legality of the acts of the institutions, entrusting such review to the Courts of the European Union. Under that system, where natural or legal persons cannot, by reason of the conditions for admissibility laid down in Article 263 TFEU, directly challenge acts of the Union such as those at issue in the present case, they are able, depending on the case, to plead the invalidity of such acts either indirectly, under Article 277 TFEU, before the Courts of the European Union, or before the national courts and to ask them, since they have no jurisdiction themselves to declare those acts invalid, to question the Court in that regard through questions referred for a preliminary ruling (see, to that effect, order of 29 April 2015,
+von Storch and Others
+v
+ECB
+, C‑64/14 P, not published, EU:C:2015:300, paragraph 50 and the case-law cited).
+54
+Accordingly, it must be found that the applicants are not individually concerned by the contested acts for the purposes of the case-law cited in paragraph 45 above.
+55
+Furthermore, that finding cannot be called in question by the case-law referred to by the applicants, namely the judgment of 18 May 1994,
+Codorniu
+v
+Council
+(C‑309/89, EU:C:1994:197). Indeed, the case giving rise to that judgment concerned the loss of a specific acquired right, namely the right to use the word ‘crémant’ in a registered graphic mark. In the present case, the applicants have not claimed the loss of a specific acquired right.
+Admissibility of the claim for damages
+Arguments of the parties
+56
+The Council contends, making reference to the case-law relating to the jurisdiction of the Courts of the European Union in connection with actions for annulment, that the request for an injunction must be refused on the ground of the Court’s manifest lack of jurisdiction.
+57
+The Parliament argues, in the first place, that the claim for compensation is inadmissible, because it is intrinsically linked to an action for annulment that is itself inadmissible.
+58
+In that regard, the Parliament, having recalled the case-law pursuant to which an action for damages is an autonomous legal remedy, so that a declaration of inadmissibility of the claim for annulment does not automatically render the claim for damages inadmissible and that that principle is limited by the prohibition of abuse of the proceedings, argues that the claim for compensation — in so far as it does not seek compensation for damages but an injunction obliging the European Union to adopt certain legislative acts — is based on the same legislative package as that concerned by the action for annulment and that, in those circumstances, it is pursuing the same objective as the action for annulment. There is therefore a direct link between the claim for damages and the claim for annulment. Given that both claims concern the same alleged unlawfulness and the claim for annulment is inadmissible, the claim for compensation should also be declared inadmissible.
+59
+In the second place, the Parliament contends that the action for damages is inadmissible because it in fact seeks to obtain an injunction. More specifically, the Parliament contends that the applicants are attempting, by their request for an injunction in connection with an action for compensation, to circumvent the rule whereby the Court does not have jurisdiction to order such an injunction in the context of a review of legality under Article 263 TFEU.
+60
+In the last place, for the sake of completeness, the Parliament maintains that the action for damages is manifestly lacking any foundation in law, so that it is possible to dismiss it, pursuant to Article 126 of the Rules of Procedure, without having to rule on the plea of inadmissibility. In that regard, the Parliament argues that, without there being a need to rule on the legality of the legislative package and the question whether the alleged unlawfulness of that legislative package constitutes a sufficiently serious breach of a rule of law the purpose of which is to confer rights on individuals, there is no direct and specific link between the conduct of the Union legislature and the damage that the applicants claim to have suffered. In that connection, the Parliament remarks that climate change is global and that the Union, even by reducing all its emissions to zero, is not in a position to overcome climate change by itself. In addition, while it does not deny the reality of climate change, the extent to which the alleged damage is a result of that change (and not of other natural phenomena or other human activities not linked to climate change) has not been definitively established. Lastly, according to the Parliament, it is also not established that the alleged damage is a result of the alleged lack of efforts to mitigate greenhouse gas emissions, rather than the lack of efforts to adapt (which falls within the Member States’ competences).
+61
+The applicants argue that their claim for compensation under Article 340 TFEU is admissible.
+62
+In that regard, the applicants recall that an action for damages is an autonomous legal remedy and that the conditions for triggering the non-contractual liability of the Union, namely unlawful conduct, damage and a causal link, are satisfied.
+63
+The applicants dispute the Parliament’s allegation of abuse of the proceedings. According to the case-law, that concept applies only in the exceptional cases where an action for damages is seeking payment of a sum in precisely the same amount as the sum that an applicant could have obtained in an action for annulment that was not brought. In the present case, an action for annulment has been brought and, furthermore, the claim in the two actions is not identical. While the basis of the request for an injunction is the protection of the applicants’ individual interests and the request was made
+inter partes
+, the claim for annulment merely seeks an annulment
+erga omnes
+. The aim of the injunction is to prevent the Union from committing acts that would cause the applicants damage as private parties and its adoption would lead to the reduction in greenhouse gas emissions necessary to avoid adding to the damage suffered. The fact that that injunction would bring advantages from which all would benefit, given the characteristics of the climate system, is irrelevant for the purposes of examining the admissibility of the request.
+64
+The applicants also dispute the Parliament’s argument that there is no causal link. In their view, issues of causation essentially require consideration of the facts, assessed in the light of legal policy. The applicants therefore dispute the Parliament’s criticisms and note that these are relatively complex issues that will be examined in their entirety during the decision on the merits and that cannot be resolved in isolation, regardless of the facts and without all their arguments being heard.
+Findings of the Court
+65
+It should be borne in mind, in the first place, that the remedy of an action for damages was introduced as an autonomous form of action, with a particular purpose to fulfil within the system of actions and subject to conditions on its use dictated by its specific nature (judgment of 2 December 1971,
+Zuckerfabrik Schöppenstedt
+v
+Council
+, 5/71, EU:C:1971:116, paragraph 3), so that the inadmissibility of the claim for annulment does not automatically entail the inadmissibility of the claim for damages (see, to that effect, judgment of 26 February 1986,
+Krohn Import-Export
+v
+Commission
+, 175/84, EU:C:1986:85, paragraph 32).
+66
+That principle is limited by the prohibition on abuse of the proceedings. An applicant may not, by means of an action for damages, attempt to obtain a result similar to the result of annulling the act, where an action for annulment concerning that act would be inadmissible (see, to that effect, judgment of 15 December 1966,
+Schreckenberg
+v
+Commission
+, 59/65, EU:C:1966:60, p. 797).
+67
+In that regard, it should be pointed out that the claim seeking annulment of the legislative package and the injunction requested in connection with the action for damages are almost identical and concern the same alleged unlawfulness. In the action for annulment, the applicants have argued that the target set by the three contested acts, namely a 40% reduction in emissions, is manifestly inadequate, which is why that target should be annulled and reviewed. In the action for damages, they seek, instead of pecuniary damages for their alleged individual losses, compensation in the form of an injunction ordering the Union to adopt measures to put an end to its unlawful and harmful conduct. The applicants therefore request that the Parliament and the Council be ordered to adopt measures under the legislative package requiring a reduction in greenhouse gas emissions by 2030 by at least 50% to 60% compared to 1990 levels.
+68
+It is clear from the action as a whole that the action for damages is not seeking compensation for damage attributable to an unlawful act or omission but amendment of the legislative package.
+69
+Both by their claim for annulment and by their request for an injunction, the applicants are seeking to obtain the same result, namely the replacement of the contested provisions of the legislative package at issue with new measures that will have to achieve a greater reduction in greenhouse gas emissions than is laid down currently.
+70
+Given that the applicants do not have
+locus standi
+and that, accordingly, they may not request annulment in part of the legislative package, it follows that their action for compensation, which in reality seeks to achieve the same result, must also be declared inadmissible.
+71
+In the light of the foregoing, the plea of inadmissibility raised by the Parliament and the Council must be upheld and the action must accordingly be dismissed as inadmissible in its entirety.
+72
+Pursuant to Article 144(3) of the Rules of Procedure, where the defendant lodges a plea of inadmissibility or of lack of competence, as provided in Article 130(1) of those rules, a decision on applications for leave to intervene is not to be given until after the plea has been rejected or the decision on the plea reserved. Furthermore, pursuant to Article 142(2) of the Rules of Procedure, an intervention is ancillary to the main proceedings and becomes devoid of purpose, inter alia, when the application is declared inadmissible.
+73
+In the present case, since the action is being dismissed in its entirety, there is no longer any need to adjudicate on the applications for leave to intervene submitted by Climate Action Network, WeMove Europe, Arbeitsgemeinschaft Bäuerliche Landwirtschaft and the Commission.
+Costs
+74
+Under Article 134(1) of the Rules of Procedure, the unsuccessful party is to be ordered to pay the costs if they have been applied for in the successful party’s pleadings.
+75
+As the applicants have been unsuccessful, they must be ordered to bear their own costs and to pay those incurred by the Parliament and the Council, in accordance with the form of order sought by those parties.
+76
+Furthermore, pursuant to Article 144(10) of the Rules of Procedure, Climate Action Network Europe, WeMove Europe, Arbeitsgemeinschaft Bäuerliche Landwirtschaft and the Commission are to bear their own costs in relation to their applications for leave to intervene.
+On those grounds,
+THE GENERAL COURT (Second Chamber)
+hereby orders:
+1.
+The action is dismissed as inadmissible.
+2.
+There is no longer any need to adjudicate on the applications for leave to intervene submitted by Climate Action Network Europe, WeMove Europe SCE mbH, Arbeitsgemeinschaft Bäuerliche Landwirtschaft and the European Commission.
+3.
+Mr A. C. and the other applicants whose names are set out in the annex are to bear their own costs and to pay those incurred by the European Parliament and the Council of the European Union.
+4.
+Climate Action Network Europe, WeMove Europe, Arbeitsgemeinschaft Bäuerliche Landwirtschaft and the Commission are to bear their own costs in relation to their applications for leave to intervene.
+Luxembourg, 8 May 2019.
+E. Coulon
+M. Prek
+Registrar
+President
+*
+Language of the case: English.
+1
+The list of the other applicants is to be appended only to the version sent to the parties.
+Top

@@ -1,0 +1,56 @@
+{
+ "BSDatum": "2026-03-27T00:00:00",
+ "BSPagina": 18997,
+ "StartDatum": "2026-04-06T00:00:00",
+ "EindDatum": null,
+ "StartDatumConditie": "SpecifiedDate",
+ "EindDatumConditie": "SpecifiedDate",
+ "Commentaar": "",
+ "IsFederaal": false,
+ "KbNummer": null,
+ "Numac": 2026002345,
+ "Opmerkingen": [],
+ "MetaData": [
+  {
+   "Rel": "Structuur",
+   "Href": "https://codex.opendata.api.vlaanderen.be/api/v2/WetgevingDocument/1041865/Structuur"
+  },
+  {
+   "Rel": "DocumentRelaties",
+   "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/DocumentRelaties"
+  },
+  {
+   "Rel": "ArtikelversieRelaties",
+   "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/ArtikelversieRelaties"
+  },
+  {
+   "Rel": "Themas",
+   "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/Themas"
+  },
+  {
+   "Rel": "Trefwoorden",
+   "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/Trefwoorden"
+  },
+  {
+   "Rel": "Errata",
+   "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/Errata"
+  },
+  {
+   "Rel": "ExterneLinks",
+   "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/ExterneLinks"
+  },
+  {
+   "Rel": "HoofdstukVersieRelaties",
+   "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/HoofdstukVersieRelaties"
+  }
+ ],
+ "Opschrift": "tot wijziging van verschillende decreten van het beleidsdomein Omgeving, in het kader van de implementatie van Europese regelgeving over hernieuwbare energie, kritieke grondstoffen en nettonultechnologie ",
+ "Datum": "2026-03-06T00:00:00",
+ "WetgevingDocumentType": "Decreet",
+ "HeeftInhoud": true,
+ "Link": {
+  "Rel": "self",
+  "Href": "https://codex.opendata.api.vlaanderen.be/api/v2/WetgevingDocument/1041865"
+ },
+ "Id": 1041865
+}

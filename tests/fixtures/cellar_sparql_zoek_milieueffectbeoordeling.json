@@ -1,0 +1,50 @@
+{
+ "head": {
+  "link": [],
+  "vars": [
+   "celex",
+   "datum",
+   "titel_nl"
+  ]
+ },
+ "results": {
+  "distinct": false,
+  "ordered": true,
+  "bindings": [
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32014L0052"
+    },
+    "datum": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2014-04-16"
+    },
+    "titel_nl": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "Richtlijn 2014/52/EU van het Europees Parlement en de Raad van 16 april 2014 tot wijziging van Richtlijn 2011/92/EU betreffende de milieueffectbeoordeling van bepaalde openbare en particuliere projecten  Voor de EER relevante tekst"
+    }
+   },
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32011L0092"
+    },
+    "datum": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2011-12-13"
+    },
+    "titel_nl": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "Richtlijn 2011/92/EU van het Europees Parlement en de Raad van 13 december 2011 betreffende de milieueffectbeoordeling van bepaalde openbare en particuliere projecten (codificatie) Voor de EER relevante tekst"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "resultcount": 8,
+ "results": [
+  {
+   "columns": {
+    "article": "2;2-1;34;35",
+    "kpdate": "2015-06-05T00:00:00",
+    "appno": "46043/14",
+    "docname": "Lambert et autres c. France [GC]",
+    "ecli": "",
+    "conclusion": "Exception préliminaire retenue (Article 34 - Locus standi);Partiellement irrecevable;Non-violation de l'article 2 - Droit à la vie (Article 2-1 - Vie) (Volet matériel) (Conditionnel)",
+    "doctype": "CLINF",
+    "importance": "1",
+    "originatingbody": "",
+    "itemid": "002-10589",
+    "rank": "1"
+   }
+  },
+  {
+   "columns": {
+    "article": "2;2-1;34;35",
+    "kpdate": "2015-06-05T00:00:00",
+    "appno": "46043/14",
+    "docname": "Lambert and Others v. France [GC]",
+    "ecli": "",
+    "conclusion": "Preliminary objection allowed (Article 34 - Locus standi);Remainder inadmissible;No violation of Article 2 - Right to life (Article 2-1 - Life) (Substantive aspect) (Conditional)",
+    "doctype": "CLIN",
+    "importance": "1",
+    "originatingbody": "",
+    "itemid": "002-10758",
+    "rank": "1"
+   }
+  },
+  {
+   "columns": {
+    "appno": "46043/14",
+    "kpdate": "2015-06-05T00:00:00",
+    "docname": "CASE OF LAMBERT AND OTHERS v. FRANCE - [Croatian Translation] summary by the Republic of Croatia (Office of the Agent) ",
+    "conclusion": "Preliminary objection allowed (Article 34 - Locus standi);Remainder inadmissible;No violation of Article 2 - Right to life (Article 2-1 - Life) (Substantive aspect) (Conditional)",
+    "importance": "1",
+    "itemid": "001-165685",
+    "article": "2;2-1;34;35",
+    "ecli": "ECLI:CE:ECHR:2015:0605JUD004604314",
+    "originatingbody": "8",
+    "doctype": "HJUDHRV",
+    "rank": "1"
+   }
+  },
+  {
+   "columns": {
+    "appno": "46043/14",
+    "kpdate": "2015-06-05T00:00:00",
+    "docname": "CASE OF LAMBERT AND OTHERS v. FRANCE - [Swedish Translation] by the Swedish National Courts Administration",
+    "conclusion": "Preliminary objection allowed (Article 34 - Locus standi);Remainder inadmissible;No violation of Article 2 - Right to life (Article 2-1 - Life) (Substantive aspect) (Conditional)",
+    "importance": "1",
+    "itemid": "001-167576",
+    "article": "2;2-1;34;35",
+    "ecli": "ECLI:CE:ECHR:2015:0605JUD004604314",
+    "originatingbody": "8",
+    "doctype": "HJUDSWE",
+    "rank": "1"
+   }
+  },
+  {
+   "columns": {
+    "appno": "46043/14",
+    "kpdate": "2015-06-05T00:00:00",
+    "docname": "AFFAIRE LAMBERT ET AUTRES c. FRANCE",
+    "conclusion": "Exception préliminaire retenue (Article 34 - Locus standi);Partiellement irrecevable;Non-violation de l'article 2 - Droit à la vie (Article 2-1 - Vie) (Volet matériel) (Conditionnel)",
+    "importance": "1",
+    "itemid": "001-155264",
+    "article": "2;2-1;34;35",
+    "ecli": "ECLI:CE:ECHR:2015:0605JUD004604314",
+    "originatingbody": "8",
+    "doctype": "HFJUD",
+    "rank": "1"
+   }
+  },
+  {
+   "columns": {
+    "appno": "46043/14",
+    "kpdate": "2015-06-05T00:00:00",
+    "docname": "CASE OF LAMBERT AND OTHERS v. FRANCE",
+    "conclusion": "Preliminary objection allowed (Article 34 - Locus standi);Remainder inadmissible;No violation of Article 2 - Right to life (Article 2-1 - Life) (Substantive aspect) (Conditional)",
+    "importance": "1",
+    "itemid": "001-155352",
+    "article": "2;2-1;34;35",
+    "ecli": "ECLI:CE:ECHR:2015:0605JUD004604314",
+    "originatingbody": "8",
+    "doctype": "HEJUD",
+    "rank": "1"
+   }
+  },
+  {
+   "columns": {
+    "article": "2;2-1;3;6;6-1;8;8-1",
+    "kpdate": "2014-06-24T00:00:00",
+    "appno": "46043/14",
+    "docname": "LAMBERT ET AUTRES c. FRANCE",
+    "ecli": "",
+    "conclusion": "",
+    "doctype": "HFCOM",
+    "importance": "4",
+    "originatingbody": "",
+    "itemid": "001-145712",
+    "rank": "1"
+   }
+  },
+  {
+   "columns": {
+    "doctype": "HEJUD",
+    "importance": "1",
+    "article": "34;35;35-1;35-3-a;8;8-1",
+    "ecli": "ECLI:CE:ECHR:2025:1028JUD003406821",
+    "originatingbody": "5",
+    "appno": "34068/21",
+    "kpdate": "2025-10-28T00:00:00",
+    "conclusion": "Preliminary objection allowed (Art. 34) Individual applications;(Art. 34) Victim;Preliminary objection dismissed (Art. 34) Individual applications;(Art. 34) Locus standi;Remainder inadmissible (Art. 35) Admissibility criteria;(Art. 35-1) Exhaustion of domestic remedies;(Art. 35-3-a) Manifestly ill-founded;(Art. 35-3-a) Ratione personae;No violation of Article 8 - Right to respect for private and family life (Article 8 - Positive obligations;Article 8-1 - Respect for family life;Respect for private life)",
+    "itemid": "001-245561",
+    "docname": "CASE OF GREENPEACE NORDIC AND OTHERS v. NORWAY",
+    "rank": "19.276196"
+   }
+  }
+ ],
+ "message": null
+}

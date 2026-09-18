@@ -1,0 +1,16 @@
+{
+ "head": {
+  "link": [],
+  "vars": [
+   "celex",
+   "datum",
+   "titel_nl",
+   "titel_en"
+  ]
+ },
+ "results": {
+  "distinct": false,
+  "ordered": true,
+  "bindings": []
+ }
+}

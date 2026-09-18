@@ -1,0 +1,47 @@
+{
+ "head": {
+  "link": [],
+  "vars": [
+   "datum",
+   "titel_nl",
+   "titel_en",
+   "eli",
+   "ecli",
+   "oj_id",
+   "oj_datum"
+  ]
+ },
+ "results": {
+  "distinct": false,
+  "ordered": true,
+  "bindings": [
+   {
+    "datum": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2024-06-24"
+    },
+    "titel_nl": {
+     "type": "literal",
+     "xml:lang": "nl",
+     "value": "Verordening (EU) 2024/1991 van het Europees Parlement en de Raad van 24 juni 2024 inzake natuurherstel en tot wijziging van Verordening (EU) 2022/869 (Voor de EER relevante tekst)"
+    },
+    "titel_en": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Regulation (EU) 2024/1991 of the European Parliament and of the Council of 24 June 2024 on nature restoration and amending Regulation (EU) 2022/869 (Text with EEA relevance)"
+    },
+    "eli": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+     "value": "http://data.europa.eu/eli/reg/2024/1991/oj"
+    },
+    "oj_id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "oj:L_202401991"
+    }
+   }
+  ]
+ }
+}

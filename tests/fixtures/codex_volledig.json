@@ -1,0 +1,347 @@
+{
+ "Info": {
+  "Errata": null,
+  "WetgevingDocumentRelaties": null,
+  "WetgevingArtikelRelaties": null,
+  "ExterneLinks": null
+ },
+ "Document": {
+  "BSDatum": "2026-03-27T00:00:00",
+  "BSPagina": 18997,
+  "StartDatum": "2026-04-06T00:00:00",
+  "EindDatum": null,
+  "StartDatumConditie": "SpecifiedDate",
+  "EindDatumConditie": "SpecifiedDate",
+  "Commentaar": "",
+  "IsFederaal": false,
+  "KbNummer": null,
+  "Numac": 2026002345,
+  "Opmerkingen": [],
+  "MetaData": [
+   {
+    "Rel": "Structuur",
+    "Href": "https://codex.opendata.api.vlaanderen.be/api/v2/WetgevingDocument/1041865/Structuur"
+   },
+   {
+    "Rel": "DocumentRelaties",
+    "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/DocumentRelaties"
+   },
+   {
+    "Rel": "ArtikelversieRelaties",
+    "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/ArtikelversieRelaties"
+   },
+   {
+    "Rel": "Themas",
+    "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/Themas"
+   },
+   {
+    "Rel": "Trefwoorden",
+    "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/Trefwoorden"
+   },
+   {
+    "Rel": "Errata",
+    "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/Errata"
+   },
+   {
+    "Rel": "ExterneLinks",
+    "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/ExterneLinks"
+   },
+   {
+    "Rel": "HoofdstukVersieRelaties",
+    "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingDocument/1041865/HoofdstukVersieRelaties"
+   }
+  ],
+  "Opschrift": "tot wijziging van verschillende decreten van het beleidsdomein Omgeving, in het kader van de implementatie van Europese regelgeving over hernieuwbare energie, kritieke grondstoffen en nettonultechnologie ",
+  "Datum": "2026-03-06T00:00:00",
+  "WetgevingDocumentType": "Decreet",
+  "HeeftInhoud": true,
+  "Link": {
+   "Rel": "self",
+   "Href": "https://codex.opendata.api.vlaanderen.be/api/v2/WetgevingDocument/1041865"
+  },
+  "Id": 1041865
+ },
+ "Inhoudstafel": {
+  "Items": [
+   {
+    "ItemType": "H",
+    "Titel": null,
+    "Items": [
+     {
+      "ArtikelType": "ART",
+      "ItemType": "A",
+      "Titel": "1.",
+      "Items": [],
+      "Versions": [
+       {
+        "StartDatum": "2026-04-06T00:00:00",
+        "EindDatum": null,
+        "StartDatumConditie": "SpecifiedDate",
+        "EindDatumConditie": "SpecifiedDate",
+        "ArtikelType": "ART",
+        "ItemType": "AV",
+        "Titel": "1. (06/04/2026 - ...)",
+        "Items": null,
+        "Versions": [],
+        "Link": {
+         "Rel": "self",
+         "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541177"
+        },
+        "Id": 1541177
+       }
+      ],
+      "Link": {
+       "Rel": "self",
+       "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikel/1363693"
+      },
+      "Id": 1363693
+     },
+     {
+      "ArtikelType": "ART",
+      "ItemType": "A",
+      "Titel": "2.",
+      "Items": [],
+      "Versions": [
+       {
+        "StartDatum": "2026-04-06T00:00:00",
+        "EindDatum": null,
+        "StartDatumConditie": "SpecifiedDate",
+        "EindDatumConditie": "SpecifiedDate",
+        "ArtikelType": "ART",
+        "ItemType": "AV",
+        "Titel": "2. (06/04/2026 - ...)",
+        "Items": null,
+        "Versions": [],
+        "Link": {
+         "Rel": "self",
+         "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541178"
+        },
+        "Id": 1541178
+       }
+      ],
+      "Link": {
+       "Rel": "self",
+       "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikel/1363694"
+      },
+      "Id": 1363694
+     }
+    ],
+    "Versions": [],
+    "Link": {
+     "Rel": "self",
+     "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingHoofdstuk/1124576"
+    },
+    "Id": 1124576
+   }
+  ],
+  "Versions": null,
+  "Link": {
+   "Rel": "self",
+   "Href": "https://codex.opendata.api.vlaanderen.be/api/v2/WetgevingDocument/1041865/Structuur"
+  }
+ },
+ "Inhoud": {
+  "Artikelen": [
+   {
+    "Titel": "1.",
+    "Link": {
+     "Rel": "self",
+     "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikel/1363693"
+    },
+    "Id": 1363693
+   },
+   {
+    "Titel": "2.",
+    "Link": {
+     "Rel": "self",
+     "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikel/1363694"
+    },
+    "Id": 1363694
+   },
+   {
+    "Titel": "3.",
+    "Link": {
+     "Rel": "self",
+     "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikel/1363695"
+    },
+    "Id": 1363695
+   },
+   {
+    "Titel": "4.",
+    "Link": {
+     "Rel": "self",
+     "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikel/1363696"
+    },
+    "Id": 1363696
+   }
+  ],
+  "ArtikelVersies": [
+   {
+    "ArtikelVersie": {
+     "Tekst": "Dit decreet regelt een gewestaangelegenheid.",
+     "Commentaar": null,
+     "MetaData": [],
+     "StartDatum": "2026-04-06T00:00:00",
+     "EindDatum": null,
+     "StartDatumConditie": "SpecifiedDate",
+     "EindDatumConditie": "SpecifiedDate",
+     "ArtikelType": "ART",
+     "ArtikelNummer": "1.",
+     "Link": {
+      "Rel": "self",
+      "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541177"
+     },
+     "Id": 1541177
+    },
+    "DocumentRelaties": null,
+    "ArtikelVersieRelaties": null,
+    "Bestanden": null,
+    "HoofdstukVersieRelaties": null
+   },
+   {
+    "ArtikelVersie": {
+     "Tekst": "Dit decreet voorziet in de gedeeltelijke omzetting van Richtlijn (EU) 2023/2413 van het Europees Parlement en de Raad van 18 oktober 2023 tot wijziging van Richtlijn (EU) 2018/2001, Verordening (EU) 2018/1999 en Richtlijn 98/70/EG wat de bevordering van energie uit hernieuwbare bronnen betreft, en tot intrekking van Richtlijn (EU) 2015/652 van de Raad.<br>\n<br>\nDit decreet voorziet in de gedeeltelijke uitvoering van de volgende verordeningen:<br>\n1° &nbsp;Verordening (EU) 2024/1252 van het Europees Parlement en de Raad van 11 april 2024 tot vaststelling van een kader om een veilige en duurzame voorziening van kritieke grondstoffen te waarborgen, en tot wijziging van de Verordeningen (EU) nr. 168/2013, (EU) 2018/858, (EU) 2018/1724 en (EU) 2019/1020;<br>\n2° Verordening (EU) 2024/1735 van het Europees Parlement en de Raad van 13 juni 2024 tot vaststelling van een kader van maatregelen ter versterking van het Europese ecosysteem voor de productie van nettonultechnologie en tot wijziging van Verordening (EU) 2018/1724.",
+     "Commentaar": null,
+     "MetaData": [],
+     "StartDatum": "2026-04-06T00:00:00",
+     "EindDatum": null,
+     "StartDatumConditie": "SpecifiedDate",
+     "EindDatumConditie": "SpecifiedDate",
+     "ArtikelType": "ART",
+     "ArtikelNummer": "2.",
+     "Link": {
+      "Rel": "self",
+      "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541178"
+     },
+     "Id": 1541178
+    },
+    "DocumentRelaties": null,
+    "ArtikelVersieRelaties": null,
+    "Bestanden": null,
+    "HoofdstukVersieRelaties": null
+   },
+   {
+    "ArtikelVersie": {
+     "Tekst": "In artikel 4.3.3 van het decreet van 5 april 1995 houdende algemene bepalingen inzake milieubeleid, ingevoegd bij het decreet van 18 december 2002 en vervangen bij het decreet van 17 mei 2024, wordt paragraaf 2 vervangen door wat volgt:<br>\n<br>\n“§2. De volgende projecten vallen niet onder de werkingssfeer van deze titel:<br>\n1° de loutere hernieuwing van de vergunning, vermeld in artikel 70 van het decreet van 25 april 2014 betreffende de omgevingsvergunning;<br>\n2° de omzetting, vermeld in artikel 390 van het voormelde decreet;<br>\n3° projecten waarvoor specifieke bepalingen gelden in het kader van de Europese regelgeving, vermeld in hoofdstuk 10/1, afdeling 2, van het voormelde decreet. Die afwijking geldt niet voor de volgende projecten:<br>\n&nbsp; a) projecten met mogelijk aanzienlijke grens- of gewestgrensoverschrijdende milieueffecten of als de bevoegde autoriteiten van de staten of gewesten in kwestie daarom verzoeken, op grond van artikel 4.4.3, §6, of artikel 4.4.7, §4, van dit decreet;<br>\n&nbsp; b) projecten waarbij er aanzienlijke onvoorziene negatieve milieueffecten kunnen zijn;<br>\n&nbsp; c) projecten die buiten gebieden voor de versnelde uitrol van hernieuwbare energie als vermeld in artikel 2.2.5, §2/1, van de Vlaamse Codex Ruimtelijke Ordening, liggen.”.",
+     "Commentaar": null,
+     "MetaData": [],
+     "StartDatum": "2026-04-06T00:00:00",
+     "EindDatum": null,
+     "StartDatumConditie": "SpecifiedDate",
+     "EindDatumConditie": "SpecifiedDate",
+     "ArtikelType": "ART",
+     "ArtikelNummer": "3.",
+     "Link": {
+      "Rel": "self",
+      "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541179"
+     },
+     "Id": 1541179
+    },
+    "DocumentRelaties": null,
+    "ArtikelVersieRelaties": null,
+    "Bestanden": null,
+    "HoofdstukVersieRelaties": null
+   },
+   {
+    "ArtikelVersie": {
+     "Tekst": "Artikel 4 en artikel 30 tot en met 36 treden in werking op de datum waarop artikel 27 van het decreet van 17 mei 2024 tot wijziging van de regelgeving betreffende de omgevingsvergunning wat betreft de invoering van een modulaire omgevingsvergunningsprocedure en het omgevingsbesluit in werking treedt.",
+     "Commentaar": null,
+     "MetaData": [],
+     "StartDatum": "2026-04-06T00:00:00",
+     "EindDatum": null,
+     "StartDatumConditie": "SpecifiedDate",
+     "EindDatumConditie": "SpecifiedDate",
+     "ArtikelType": "ART",
+     "ArtikelNummer": "38.",
+     "Link": {
+      "Rel": "self",
+      "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541214"
+     },
+     "Id": 1541214
+    },
+    "DocumentRelaties": null,
+    "ArtikelVersieRelaties": null,
+    "Bestanden": null,
+    "HoofdstukVersieRelaties": null
+   }
+  ],
+  "ToekomstigeArtikelVersies": [
+   {
+    "Tekst": "In artikel 4.3.3 van hetzelfde decreet, ingevoegd bij het decreet van 18 december 2002, vervangen bij het decreet van 17 mei 2024 en gewijzigd bij artikel 3 van dit decreet, wordt paragraaf 2 vervangen door wat volgt:<br>\n<br>\n“§2. De volgende projecten vallen niet onder de werkingssfeer van deze titel:<br>\n1° de loutere hernieuwing van de vergunning, vermeld in artikel 91 van het decreet van 25 april 2014 betreffende de omgevingsvergunning;<br>\n2° projecten waarvoor specifieke bepalingen gelden in het kader van de Europese regelgeving, vermeld in hoofdstuk 10/1, afdeling 2, van het voormelde decreet. Die afwijking geldt niet voor de volgende projecten:<br>\n&nbsp; a) projecten met mogelijk aanzienlijke grens- of gewestgrensoverschrijdende milieueffecten of als de bevoegde autoriteiten van de staten of gewesten in kwestie daarom verzoeken, op grond van artikel 4.4.3, §6, of artikel 4.4.7, §4, van dit decreet;<br>\n&nbsp; b) projecten waarbij er aanzienlijke onvoorziene negatieve milieueffecten kunnen zijn;<br>\n&nbsp; c) projecten die buiten gebieden voor de versnelde uitrol van hernieuwbare energie als vermeld in artikel 2.2.5, §2/1, van de Vlaamse Codex Ruimtelijke Ordening, liggen.”.",
+    "Commentaar": null,
+    "MetaData": [
+     {
+      "Rel": "ArtikelversieRelaties",
+      "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541180/ArtikelversieRelaties"
+     },
+     {
+      "Rel": "DocumentRelaties",
+      "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541180/DocumentRelaties"
+     },
+     {
+      "Rel": "Bestanden",
+      "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541180/Bestanden"
+     },
+     {
+      "Rel": "HoofdstukVersieRelaties",
+      "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541180/HoofdstukVersieRelaties"
+     }
+    ],
+    "StartDatum": "2100-01-01T00:00:00",
+    "EindDatum": null,
+    "StartDatumConditie": "DateDependentOnExternalEvent",
+    "EindDatumConditie": "SpecifiedDate",
+    "ArtikelType": "ART",
+    "ArtikelNummer": "4.",
+    "Link": {
+     "Rel": "self",
+     "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingArtikelVersie/1541180"
+    },
+    "Id": 1541180
+   }
+  ],
+  "Hoofdstukken": [
+   {
+    "Titel": null,
+    "Link": {
+     "Rel": "self",
+     "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingHoofdstuk/1124575"
+    },
+    "Id": 1124575
+   },
+   {
+    "Titel": null,
+    "Link": {
+     "Rel": "self",
+     "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingHoofdstuk/1124576"
+    },
+    "Id": 1124576
+   }
+  ],
+  "HoofdstukVersies": [
+   {
+    "HoofdstukVersie": {
+     "Commentaar": null,
+     "MetaData": [
+      {
+       "Rel": "ArtikelversieRelaties",
+       "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingHoofdstukVersie/123412/ArtikelversieRelaties"
+      }
+     ],
+     "StartDatum": null,
+     "EindDatum": null,
+     "StartDatumConditie": "SpecifiedDate",
+     "EindDatumConditie": "SpecifiedDate",
+     "Titel": "Document",
+     "Link": {
+      "Rel": "self",
+      "Href": "https://codex.opendata.api.vlaanderen.be/api/WetgevingHoofdstukVersie/123412"
+     },
+     "Id": 123412
+    },
+    "HoofdstukVersieRelaties": null
+   }
+  ],
+  "ToekomstigeHoofdstukVersies": []
+ }
+}

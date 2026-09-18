@@ -1,0 +1,112 @@
+{
+  "manifest_version": "0.3",
+  "name": "be-rechtspraak",
+  "display_name": "BE-rechtspraak (beta)",
+  "version": "0.1.0",
+  "description": "Betaversie, geen product, zonder garantie of aansprakelijkheid; geen juridisch advies. Belgische en Europese rechtspraak én wetgeving (Juportal, DBRC/RvVb, RvS, HvJ EU, EHRM, EUR-Lex, Vlaamse Codex, Justel) met controleerbare bron-URL's en VENA-verwijzingen.",
+  "long_description": "Betaversie — geen product, geen garantie, geen aansprakelijkheid. Deze software is een experimenteel hulpmiddel in ontwikkeling, geen commercieel product of dienst. Ze wordt kosteloos aangeboden zoals ze is, zonder enige uitdrukkelijke of stilzwijgende garantie, onder meer over juistheid, volledigheid, actualiteit of geschiktheid voor een bepaald doel. De resultaten zijn een geautomatiseerde opvraging van publieke rechtspraak- en wetgevingsbronnen; ze zijn geen juridisch advies en vervangen geen raadpleging van de officiële bron of een eigen juridische analyse. Een zoektreffer of fragment kan aanslaan op wat een partij aanvoert in plaats van op het oordeel van het rechtscollege: citeer alleen na controle in de officiële bron. Nul treffers betekent niet dat een uitspraak of norm niet bestaat. De gebruiker is zelf volledig verantwoordelijk voor het controleren van de resultaten en voor elk gebruik dat ervan wordt gemaakt, ook voor het naleven van de gebruiksvoorwaarden van de geraadpleegde bronnen. De auteur is niet aansprakelijk voor schade die voortvloeit uit het gebruik van de software of de resultaten.\n\nMCP-connector voor Belgische en Europese rechtspraak en wetgeving. Zoekt op ECLI, arrest- of zaaknummer, haalt de integrale tekst op (server-rendered pagina's en PDF-tekstextractie), markeert het beoordelende deel van de uitspraak als citeermateriaal, en geeft bij elke treffer een controleerbare bron-URL plus een voorstel van VENA-voetnootverwijzing. Optioneel: vrijetekst- en rolnummerzoeken op Juportal via een meegeleverde headless browser (Playwright). Anti-hallucinatie: de tools geven uitsluitend terug wat de bron effectief levert; nul treffers betekent niet dat een uitspraak niet bestaat.\n\nBronnen waarvan de robots.txt geautomatiseerde opvraging afraadt (Juportal, Raad van State, Justel) staan standaard uit. Wie ze aanzet, doet dat op eigen verantwoordelijkheid; zie de toelichting bij elke schakelaar en de README.\n\nDe connector bewaart geen uitspraken, wetteksten of zoekopdrachten: er is geen cache en geen geschiedenis, en niets van de opgevraagde inhoud wordt naar schijf geschreven. Opvragingen gaan rechtstreeks van de eigen computer naar de bron; er is geen tussenserver van de auteur. Uitspraken kunnen persoonsgegevens bevatten zoals de bron ze publiceert; wat de gebruiker daarmee doet, valt onder diens eigen verantwoordelijkheid. De connector schrijft alleen technische meldingen naar het logbestand van Claude Desktop, geen inhoud van uitspraken.\n\nEerste start duurt 1 à 3 minuten (eenmalige installatie van de omgeving, vergt internet en Python 3.12 of hoger); zet je het browser-zoeken aan, dan wordt daarbij ook eenmalig Chromium gedownload (~100 MB).",
+  "author": {
+    "name": "Jef Seghers",
+    "url": "https://github.com/jefseghers-del/rechtspraak-mcp"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "server/main.py",
+    "mcp_config": {
+      "command": "python3",
+      "args": [
+        "${__dirname}/server/main.py"
+      ],
+      "env": {
+        "RECHTSPRAAK_MCP_FETCH_JUPORTAL": "${user_config.juportal_ophalen}",
+        "RECHTSPRAAK_MCP_FETCH_RVS": "${user_config.rvs_ophalen}",
+        "RECHTSPRAAK_MCP_BROWSER_ZOEK_JUPORTAL": "${user_config.juportal_browser_zoek}",
+        "RECHTSPRAAK_MCP_FETCH_HVJ": "${user_config.hvj_ophalen}",
+        "RECHTSPRAAK_MCP_FETCH_EHRM": "${user_config.ehrm_ophalen}",
+        "RECHTSPRAAK_MCP_FETCH_EURLEX": "${user_config.eurlex_ophalen}",
+        "RECHTSPRAAK_MCP_FETCH_CODEX": "${user_config.codex_ophalen}",
+        "RECHTSPRAAK_MCP_FETCH_JUSTEL": "${user_config.justel_ophalen}"
+      },
+      "platform_overrides": {
+        "win32": {
+          "command": "python"
+        }
+      }
+    }
+  },
+  "user_config": {
+    "juportal_ophalen": {
+      "type": "boolean",
+      "title": "Juportal automatisch ophalen",
+      "description": "Haalt uitspraken effectief op bij juportal.be (op ECLI). De Juportal-disclaimer staat hergebruik van rechtspraak toe (geen auteursrecht op arresten, artikel XI.172, §2 WER), maar de robots.txt van de site weert alle bots ('Disallow: /'). De connector doet alleen gerichte opvragingen per ECLI, met herkenbare identificatie en rate limiting. Standaard uit: aanzetten is een eigen keuze en verantwoordelijkheid van de gebruiker. Zie de README, sectie Bronnen en gebruiksvoorwaarden.",
+      "default": false
+    },
+    "rvs_ophalen": {
+      "type": "boolean",
+      "title": "Raad van State automatisch ophalen",
+      "description": "Haalt arrest-PDF's effectief op via arr.php bij raadvst-consetat.be (op arrestnummer). De RvS-disclaimer noemt de inhoud van de arresten vrij beschikbaar voor iedereen, maar de robots.txt weert bots op arr.php. De connector doet alleen gerichte opvragingen per arrestnummer, met herkenbare identificatie en rate limiting (10 s). Standaard uit: aanzetten is een eigen keuze en verantwoordelijkheid van de gebruiker. Zie de README, sectie Bronnen en gebruiksvoorwaarden.",
+      "default": false
+    },
+    "juportal_browser_zoek": {
+      "type": "boolean",
+      "title": "Vrij zoeken op Juportal (browser)",
+      "description": "Zet vrijetekst- en rolnummerzoeken op Juportal aan via een meegeleverde headless browser. Juportal biedt vrij zoeken enkel via een JavaScript-formulier; deze schakelaar automatiseert dat, wat robots.txt afraadt — inschakelen is een bewuste keuze en verantwoordelijkheid van de gebruiker (interactief, gericht, met rate limiting; geen bulk-crawl, en bot-challenges worden nooit omzeild). Bij de eerste keer aanzetten wordt eenmalig Chromium gedownload (~100 MB). Standaard uit. Zie de README, sectie Bronnen en gebruiksvoorwaarden.",
+      "default": false
+    },
+    "hvj_ophalen": {
+      "type": "boolean",
+      "title": "Hof van Justitie EU ophalen",
+      "description": "Haalt arresten en beschikkingen van het Hof van Justitie en het Gerecht op (op ECLI), via CELLAR, de open-data-dienst van het Publicatiebureau van de EU. Open bron: vrij hergebruik onder Besluit 2011/833/EU. De link in het antwoord is de gewone EUR-Lex-pagina.",
+      "default": true
+    },
+    "ehrm_ophalen": {
+      "type": "boolean",
+      "title": "EHRM ophalen en doorzoeken (HUDOC)",
+      "description": "Zoekt EHRM-rechtspraak via de publieke HUDOC-API (op ECLI, verzoekschriftnummer of vrije tekst). Open bron: publieke data-API van het EHRM zelf.",
+      "default": true
+    },
+    "eurlex_ophalen": {
+      "type": "boolean",
+      "title": "EU-wetgeving (EUR-Lex)",
+      "description": "Zoekt en haalt EU-wetgeving op via CELLAR, de open-data-dienst van het Publicatiebureau: op CELEX, citeervorm (Richtlijn 2011/92/EU) of woorden in het opschrift (niet in de volledige tekst). Open bron: vrij hergebruik onder Besluit 2011/833/EU. De link in het antwoord is de gewone EUR-Lex-pagina.",
+      "default": true
+    },
+    "codex_ophalen": {
+      "type": "boolean",
+      "title": "Vlaamse Codex (Vlaamse + federale wetgeving)",
+      "description": "Zoekt en haalt wetgeving op via de officiële Vlaamse Codex Open Data API (vrij zoeken, numac, geconsolideerde teksten). Open data van de Vlaamse overheid.",
+      "default": true
+    },
+    "justel_ophalen": {
+      "type": "boolean",
+      "title": "Justel ophalen (Belgische ELI-links)",
+      "description": "Haalt geconsolideerde teksten op via Belgische ELI-links (ejustice.just.fgov.be). Op officiële akten rust geen auteursrecht (artikel XI.172, §2 WER), maar de robots.txt weert bots op de wetgevingspaden. De connector doet alleen gerichte opvragingen per ELI, met herkenbare identificatie en rate limiting (10 s). Standaard uit: aanzetten is een eigen keuze en verantwoordelijkheid van de gebruiker. Zie de README, sectie Bronnen en gebruiksvoorwaarden.",
+      "default": false
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "python": ">=3.12"
+    }
+  },
+  "keywords": [
+    "rechtspraak",
+    "belgië",
+    "juportal",
+    "raad van state",
+    "rvvb",
+    "vena",
+    "juridisch"
+  ],
+  "license": "EUPL-1.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jefseghers-del/rechtspraak-mcp"
+  },
+  "homepage": "https://github.com/jefseghers-del/rechtspraak-mcp"
+}

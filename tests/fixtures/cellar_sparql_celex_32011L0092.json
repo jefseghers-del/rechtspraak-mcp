@@ -1,0 +1,52 @@
+{
+ "head": {
+  "link": [],
+  "vars": [
+   "datum",
+   "titel_nl",
+   "titel_en",
+   "eli",
+   "ecli",
+   "oj_id",
+   "oj_datum"
+  ]
+ },
+ "results": {
+  "distinct": false,
+  "ordered": true,
+  "bindings": [
+   {
+    "datum": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2011-12-13"
+    },
+    "titel_nl": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "Richtlijn 2011/92/EU van het Europees Parlement en de Raad van 13 december 2011 betreffende de milieueffectbeoordeling van bepaalde openbare en particuliere projecten (codificatie) Voor de EER relevante tekst"
+    },
+    "titel_en": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "Directive 2011/92/EU of the European Parliament and of the Council of 13 December 2011 on the assessment of the effects of certain public and private projects on the environment (codification) Text with EEA relevance"
+    },
+    "eli": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+     "value": "http://data.europa.eu/eli/dir/2011/92/oj"
+    },
+    "oj_id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "oj:JOL_2012_026_R_0001_01"
+    },
+    "oj_datum": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2012-01-28"
+    }
+   }
+  ]
+ }
+}

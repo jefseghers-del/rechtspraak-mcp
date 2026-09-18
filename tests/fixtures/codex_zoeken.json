@@ -1,0 +1,39 @@
+{
+ "GevondenDocumenten": 147,
+ "GevondenArtikelen": 392,
+ "ResultatenLijst": [
+  {
+   "Id": 1041865,
+   "Datum": "2026-03-06T00:00:00Z",
+   "Opschrift": "Decreet tot wijziging van verschillende decreten van het beleidsdomein Omgeving, in het kader van de implementatie van Europese regelgeving over hernieuwbare energie, kritieke grondstoffen en nettonultechnologie ",
+   "HeeftInhoud": true,
+   "BSDatum": "2026-03-27T00:00:00Z",
+   "Versies": [
+    1541194
+   ]
+  },
+  {
+   "Id": 1041786,
+   "Datum": "2026-02-06T00:00:00Z",
+   "Opschrift": "Besluit van de Vlaamse Regering tot wijziging van het besluit van de Vlaamse Regering van 16 juli 2010 tot bepaling van stedenbouwkundige handelingen waarvoor geen omgevingsvergunning nodig is en van het besluit van de Vlaamse Regering van 7 mei 2021 tot uitvoering van diverse bepalingen uit de wet van 28 december 1967 betreffende de onbevaarbare waterlopen en tot wijziging van het besluit van de Vlaamse Regering van 12 december 2008 tot uitvoering van titel XVI van het decreet van 5 april 1995 houdende algemene bepalingen inzake milieubeleid, wat betreft het toezicht op de naleving van de wet van 28 december 1967 betreffende de onbevaarbare waterlopen",
+   "HeeftInhoud": true,
+   "BSDatum": "2026-02-26T00:00:00Z",
+   "Versies": [
+    1539356
+   ]
+  },
+  {
+   "Id": 1041521,
+   "Datum": "2025-11-21T00:00:00Z",
+   "Opschrift": "Decreet tot wijziging van het decreet van 25 april 2014 betreffende de omgevingsvergunning, wat het vermijden van een belangenconflict betreft bij omgevingsvergunningen die door een gemeente of provincie zijn aangevraagd ",
+   "HeeftInhoud": true,
+   "BSDatum": "2025-11-28T00:00:00Z",
+   "Versies": [
+    1534656
+   ]
+  }
+ ],
+ "Skip": 0,
+ "Take": 3,
+ "SearchString": "milieueffectrapportage"
+}

@@ -1,0 +1,39 @@
+{
+ "head": {
+  "link": [],
+  "vars": [
+   "celex",
+   "datum",
+   "titel_nl",
+   "titel_en"
+  ]
+ },
+ "results": {
+  "distinct": false,
+  "ordered": true,
+  "bindings": [
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "61978CJ0120"
+    },
+    "datum": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "1979-02-20"
+    },
+    "titel_nl": {
+     "type": "literal",
+     "xml:lang": "nl",
+     "value": "Arrest van het Hof van 20 februari 1979.#Rewe-Zentral AG tegen Bundesmonopolverwaltung für Branntwein.#Verzoek om een prejudiciële beslissing: Hessische Finanzgericht - Duitsland.#Maatregelen van gelijke werking als kwantitatieve beperkingen.#Zaak 120/78."
+    },
+    "titel_en": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Judgment of the Court of 20 February 1979.#Rewe-Zentral AG v Bundesmonopolverwaltung für Branntwein.#Reference for a preliminary ruling: Hessisches Finanzgericht - Germany.#Measures heaving an effect equivalent to quantitative restrictions.#Case 120/78."
+    }
+   }
+  ]
+ }
+}
