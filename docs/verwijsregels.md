@@ -15,9 +15,13 @@ De connector stelt bij elke treffer een voetnoot voor volgens de **VENA-verwijsr
 
 - Alle onderdelen worden gescheiden door een komma; **elke voetnoot eindigt met een punt** (algemene regel 5).
 - Datums met de maand voluit: `2 maart 2021`.
-- Een URL wordt alleen vermeld als het om een minder bekende vindplaats gaat (regel 10). De connector zet de
-  URL daarom alleen in de verwijzing als er geen ECLI (rechtspraak) of ELI (wetgeving) is. De bron-URL blijft
-  altijd beschikbaar in het veld `url`, om te controleren.
+- **Bewuste afwijking van regel 10.1.** VENA vermeldt geen URL van veelgebruikte databanken (Juportal,
+  Grondwettelijk Hof, Raad van State, DBRC, curia, HUDOC, EUR-Lex); alleen minder bekende vindplaatsen krijgen
+  een URL (regel 10.2). De connector zet de bron-URL in de verwijzing zodra er geen ECLI (rechtspraak) of ELI
+  (wetgeving) is, ook als die URL van zo'n databank komt (bv. een RvVb-arrest op dbrc.be, een RvS-arrest zonder
+  ECLI, een norm uit de Vlaamse Codex). Zo blijft elk voorstel controleerbaar. Wie de verwijzing in een
+  processtuk of publicatie overneemt, schrapt die URL. Met een ECLI of ELI komt er geen URL bij. De bron-URL
+  blijft altijd beschikbaar in het veld `url`.
 
 ## Rechtspraak (RS1)
 

@@ -38,7 +38,7 @@ arresten uit verschillende jaren vóór dit in productie gaat]**.
 ### 1.2 Drie categorieën die niét het oordeel zijn maar er wel op lijken
 
 1. **Conclusie van het openbaar ministerie** (Cassatie) en **auditeursverslag** (RvS): gezaghebbend,
-   afzonderlijk citeerbaar (VENA: `Concl. HENKES bij Cass. 21 oktober 2010, JT 2011, (562) 563`),
+   afzonderlijk citeerbaar (VENA RS2: `HENKES A., 'Conclusie bij Cass. 21 oktober 2010', JT 2011, (562) 563.`),
    maar **geen oordeel van het college**. Moeten apart gelabeld worden en nooit als de beslissing
    worden gepresenteerd.
 2. **Weergave van eerdere rechtspraak binnen het arrest**: het college dat een eerder arrest
