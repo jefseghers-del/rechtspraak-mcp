@@ -48,6 +48,17 @@ def _datum_voluit(d: date) -> str:
     return f"{d.day} {_MAANDEN_NL[d.month - 1]} {d.year}"
 
 
+def is_conclusie(treffer: Treffer) -> bool:
+    """Is de treffer een conclusie van het openbaar ministerie (geen uitspraak)?
+
+    Herkend aan het documenttype in de ECLI (``...:CONC.<datum>...``) of aan de titel die
+    Juportal meegeeft ("conclusie van het openbaar ministerie").
+    """
+    if treffer.ecli and ":CONC." in treffer.ecli.upper():
+        return True
+    return "conclusie van het openbaar ministerie" in (treffer.titel or "").lower()
+
+
 def vena_verwijzing(treffer: Treffer) -> str | None:
     """Bouw een VENA-voetnootverwijzing (voorstel) uit één treffer, of None.
 
@@ -61,6 +72,11 @@ def vena_verwijzing(treffer: Treffer) -> str | None:
         return None
     afk = _INSTANTIE_AFK.get(treffer.instantie, treffer.instantie)
     kop = f"{afk} {_datum_voluit(treffer.datum)}" if treffer.datum else afk
+    if is_conclusie(treffer):
+        # Een conclusie van het openbaar ministerie is geen uitspraak van het Hof. VENA:
+        # "Concl. FAMILIENAAM I. bij Cass. <datum>, ..." — de naam van de magistraat levert
+        # de bron niet mee, dus die blijft aan de gebruiker. [TE VERIFIËREN: VENA RS2]
+        kop = f"Concl. OM bij {kop}"
     delen = [kop]
     if treffer.rolnummer:
         label = "AR" if afk == "Cass." else "nr."

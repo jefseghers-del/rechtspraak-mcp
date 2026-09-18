@@ -207,3 +207,22 @@ def test_zoek_op_identifier_neemt_datum_aan():
     # De datum moet als tool-parameter bestaan; zonder dat kan het model ze niet meegeven.
     tool = next(t for t in asyncio.run(mcp.list_tools()) if t.name == "zoek_op_identifier")
     assert "datum" in tool.input_schema["properties"]
+
+
+def test_conclusie_openbaar_ministerie_krijgt_geen_beoordelend_deel():
+    from rechtspraak_mcp.schema import Uitspraak
+    from rechtspraak_mcp.server import _met_beoordeling
+
+    u = Uitspraak(
+        treffer=Treffer(
+            bron="juportal",
+            instantie="Hof van Cassatie",
+            titel="Hof van Cassatie, conclusie van het openbaar ministerie van 04 juni 2012",
+            ecli="ECLI:BE:CASS:2012:CONC.20120604.4",
+            url="https://juportal.be/content/ECLI:BE:CASS:2012:CONC.20120604.4",
+        ),
+        tekst="III. BESLISSING VAN HET HOF\nBeoordeling\nZou het Hof ... (tekst van de conclusie)",
+    )
+    _met_beoordeling(u)
+    assert u.beoordeling is None
+    assert "conclusie van het openbaar ministerie" in u.segmentatie

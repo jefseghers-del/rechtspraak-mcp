@@ -39,7 +39,7 @@ from .adapters import raad_van_state as _rvs
 from .botcontrole import MELDING_EURLEX, MELDING_HUDOC
 from .schema import Norm, NormTekst, Treffer, Uitspraak, WetgevingRespons, ZoekQuery, ZoekRespons
 from .segmentatie import segmenteer
-from .verwijzing import vena_verwijzing, vena_verwijzing_norm
+from .verwijzing import is_conclusie, vena_verwijzing, vena_verwijzing_norm
 from .wetgeving import actieve_wetgeving_adapters, maak_zoeker
 from .wetgeving import codex as _codex
 from .wetgeving import eurlex as _eurlex
@@ -387,6 +387,15 @@ def _met_beoordeling(uitspraak: Uitspraak) -> Uitspraak:
     enkel ter controle/nazicht wordt opgehaald — zodat het onderscheid oordeel/
     partijenstandpunt nooit afhangt van de vraagstelling.
     """
+    if is_conclusie(uitspraak.treffer):
+        uitspraak.beoordeling = None
+        uitspraak.segmentatie = (
+            "Dit is een conclusie van het openbaar ministerie, geen uitspraak van het Hof: er "
+            "is geen oordeel van het rechtscollege in te citeren. Citeer ze als conclusie "
+            "(VENA: 'Concl. FAMILIENAAM I. bij Cass. <datum>, ...'), en zoek voor het oordeel "
+            "het arrest van dezelfde dag en hetzelfde rolnummer op."
+        )
+        return uitspraak
     resultaat = segmenteer(
         uitspraak.tekst,
         bron=uitspraak.treffer.bron,

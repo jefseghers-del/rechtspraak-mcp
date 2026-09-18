@@ -1,6 +1,6 @@
 [project]
 name = "rechtspraak-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP-connector (betaversie) voor Belgische en Europese rechtspraak en wetgeving, met controleerbare bron-URL's en VENA-verwijzingen."
 requires-python = ">=3.12"
 license = "EUPL-1.2"

@@ -125,6 +125,18 @@ moet de connector de publicatiemaand raden en stopt hij na 40 seconden (zie § 6
 
 ### Met Juportal of de Raad van State aangezet
 
+Een algemenere vraag vanuit een dossier. Hiervoor moeten **"Juportal automatisch ophalen"** en
+**"Vrij zoeken op Juportal"** aan staan (zie § 2):
+
+> Mijn cliënt ondervindt al maanden hinder van werken op het aanpalende perceel: trillingen en scheuren in
+> de gevel. Welke voorwaarden stelt het Hof van Cassatie voor een vordering wegens burenhinder (artikel 544
+> oud BW, nu artikel 3.101 BW)? Zoek rechtspraak op Juportal, haal de relevante arresten op en citeer alleen
+> uit de beslissing van het Hof, telkens met de VENA-verwijzing.
+
+Claude zoekt dan op Juportal, haalt de arresten op en citeert uit de beslissing van het Hof. Vraag bij
+een algemene vraag altijd naar de arresten zelf: de korte samenvatting die Juportal bij een treffer toont
+(de fiche), is geen tekst van het Hof.
+
 > Haal het arrest van het Hof van Cassatie met ECLI:BE:CASS:2013:ARR.20130611.12 op en geef alleen de
 > beslissing van het Hof.
 
@@ -142,6 +154,11 @@ via de link naar de officiële bron.
 zet het oordeel van het rechtscollege apart (veld *beoordeling*) en zegt hoe hij het heeft afgebakend.
 Herkent hij de structuur niet, dan zegt hij dat; kijk dan zelf na welk deel het oordeel is. Vraag Claude
 uitdrukkelijk om alleen uit het beoordelende deel te citeren.
+
+**Arrest, conclusie of fiche.** Juportal bevat naast arresten ook conclusies van het openbaar ministerie
+en samenvattingen (fiches). Een conclusie is geen uitspraak van het Hof: de connector herkent ze, geeft er
+geen "beoordelend deel" voor en stelt als voetnoot "Concl. OM bij Cass. …" voor (vul de naam van de
+magistraat zelf aan). Citeer het oordeel van het Hof altijd uit het arrest.
 
 **Nul treffers betekent niet: bestaat niet.** De connector geeft alleen wat de bron teruggeeft. Vindt hij
 niets, dan zegt hij waarom (bron uit, nummer niet herkend, tijdslimiet, botcontrole) en geeft hij een link

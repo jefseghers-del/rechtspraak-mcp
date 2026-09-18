@@ -181,3 +181,31 @@ def test_belgische_norm_zonder_opschrift_geeft_none():
         )
         is None
     )
+
+
+def test_conclusie_openbaar_ministerie_is_geen_arrest():
+    # Een conclusie van het OM mag niet als uitspraak van het Hof verschijnen (VENA:
+    # "Concl. FAMILIENAAM I. bij Cass. ..."); de naam levert de bron niet, dus "OM".
+    t = Treffer(
+        bron="juportal",
+        instantie="Hof van Cassatie",
+        titel="Hof van Cassatie, conclusie van het openbaar ministerie van 04 juni 2012",
+        datum=date(2012, 6, 4),
+        ecli="ECLI:BE:CASS:2012:CONC.20120604.4",
+        rolnummer="C.10.0672.N",
+        url="https://juportal.be/content/ECLI:BE:CASS:2012:CONC.20120604.4",
+    )
+    assert vena_verwijzing(t).startswith("Concl. OM bij Cass. 4 juni 2012, AR C.10.0672.N, ")
+
+
+def test_arrest_blijft_arrest():
+    t = Treffer(
+        bron="juportal",
+        instantie="Hof van Cassatie",
+        titel="Hof van Cassatie, vonnis/arrest van 5 december 2016",
+        datum=date(2016, 12, 5),
+        ecli="ECLI:BE:CASS:2016:ARR.20161205.2",
+        rolnummer="C.16.0150.N",
+        url="https://juportal.be/content/ECLI:BE:CASS:2016:ARR.20161205.2",
+    )
+    assert vena_verwijzing(t).startswith("Cass. 5 december 2016, AR C.16.0150.N, ")
