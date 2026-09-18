@@ -26,6 +26,14 @@ Lessen uit echte Windows-starts:
   seconde af, ook als die net het slot heeft genomen. Het slot bewaart daarom het proces-ID;
   wie wacht, kijkt of dat proces nog leeft en neemt het slot van een gestopt proces meteen
   over. Een slot ouder dan 15 minuten geldt hoe dan ook als achtergelaten.
+* Afgebroken installaties. pip installeert niet atomair: een hard afgebroken pip kan een pakket
+  achterlaten met metadata maar zonder alle bestanden (vastgesteld bij numpy), en een volgende
+  pip slaat het dan over als "al geïnstalleerd". Een marker (`.installatie_bezig`) staat er
+  zolang de installatie loopt; vindt een volgende start hem nog, dan wordt de venv opnieuw
+  opgebouwd. Wordt alleen de bootstrap gestopt, dan loopt pip als wees door; het slot bewaart
+  daarom ook de PID's van de kindprocessen (pip, ensurepip, `playwright install`) en geldt pas
+  als achtergelaten wanneer ook die gestopt zijn, zodat nooit twee pips tegelijk in dezelfde
+  venv schrijven.
 * Claude Desktop maakt de venv soms zelf aan, zonder pip. Daarom `with_pip=False` en daarna
   afzonderlijk `ensurepip`.
 * Python uit de Microsoft Store leidt schrijfacties onder AppData om naar een eigen map
@@ -48,6 +56,7 @@ HIER = Path(__file__).resolve().parent  # .../server in de uitgepakte bundel
 VENV = HIER / "venv"
 WHEEL_SENTINEL = HIER / ".wheel_ok"  # bevat de bestandsnaam van de geïnstalleerde wheel
 CHROMIUM_SENTINEL = HIER / ".chromium_ok"  # markeert dat Chromium al gedownload is
+BEZIG = HIER / ".installatie_bezig"  # bestaat zolang een installatie loopt
 SLOT = HIER / ".bootstrap.lock"
 SLOT_VERLOOPT_S = 15 * 60  # een slot ouder dan dit is hoe dan ook achtergelaten
 NAAM = "be-rechtspraak"
@@ -95,10 +104,23 @@ def _bundelwheel() -> Path:
     return wheels[0]
 
 
+def _draai(argumenten: list[str]) -> int:
+    """Voer een installatiestap uit als kindproces en noteer zijn PID in het slot.
+
+    Enkel aanroepen met het slot in handen. Wordt deze bootstrap hard gestopt, dan loopt het
+    kindproces door; wie wacht, ziet zijn PID in het slot en neemt het niet over zolang het
+    leeft."""
+    proces = subprocess.Popen(argumenten, stdout=sys.stderr, stderr=sys.stderr)
+    try:
+        with open(SLOT, "a") as f:
+            f.write(f"{proces.pid}\n")
+    except OSError:
+        pass
+    return proces.wait()
+
+
 def _pip(*argumenten: str) -> int:
-    return subprocess.run(
-        [str(_venv_py()), "-m", "pip", *argumenten], stdout=sys.stderr, stderr=sys.stderr
-    ).returncode
+    return _draai([str(_venv_py()), "-m", "pip", *argumenten])
 
 
 def _heeft_module(module: str) -> bool:
@@ -121,9 +143,7 @@ def _zorg_voor_pip() -> bool:
     if _heeft_module("pip"):
         return True
     _meld("pip ontbreekt in de omgeving; wordt toegevoegd (ensurepip).")
-    return subprocess.run(
-        [str(_venv_py()), "-m", "ensurepip", "--upgrade"], stdout=sys.stderr, stderr=sys.stderr
-    ).returncode == 0
+    return _draai([str(_venv_py()), "-m", "ensurepip", "--upgrade"]) == 0
 
 
 def _klaar(wheel: Path) -> bool:
@@ -168,7 +188,11 @@ def _proces_leeft(pid: int) -> bool:
 
 
 def _slot_achtergelaten() -> bool:
-    """Is het bestaande slot van een gestopt proces, of te oud?"""
+    """Is het bestaande slot van een gestopt proces, of te oud?
+
+    Inhoud van het slot: `<pid> <tijd>` en daarna één regel per kindproces (pip, ensurepip,
+    `playwright install`). Achtergelaten is het pas wanneer de eigenaar én al zijn
+    kindprocessen gestopt zijn."""
     try:
         if time.time() - SLOT.stat().st_mtime > SLOT_VERLOOPT_S:
             return True
@@ -178,9 +202,10 @@ def _slot_achtergelaten() -> bool:
     if not inhoud:
         return False  # net aangemaakt, PID nog niet geschreven
     try:
-        return not _proces_leeft(int(inhoud[0]))
+        pids = [int(inhoud[0]), *(int(x) for x in inhoud[2:])]
     except ValueError:
         return False
+    return not any(_proces_leeft(pid) for pid in pids)
 
 
 class _Slot:
@@ -250,18 +275,28 @@ def _maak_venv() -> None:
 
 def _installeer(wheel: Path) -> None:
     """Enkel aanroepen met het slot in handen."""
-    eerste_keer = not (_venv_py().exists() and WHEEL_SENTINEL.exists() and _heeft_module("rechtspraak_mcp"))
+    afgebroken = BEZIG.exists()
+    eerste_keer = afgebroken or not (
+        _venv_py().exists() and WHEEL_SENTINEL.exists() and _heeft_module("rechtspraak_mcp")
+    )
+    BEZIG.write_text(f"{os.getpid()}\n")  # blijft staan als dit proces wordt afgebroken
     if eerste_keer:
         _meld("Eerste start: lokale omgeving wordt aangemaakt (eenmalig, 1 à 3 minuten, vergt internet).")
         if _is_store_python():
             _meld("Python uit de Microsoft Store in gebruik. Dat werkt, maar Python van python.org is "
                   "de aanbevolen keuze (zie docs/installeren-windows.md).")
+        if afgebroken:
+            # Een half geïnstalleerd pakket ziet pip als aanwezig; alleen opnieuw beginnen helpt.
+            _meld("Een vorige installatie werd afgebroken; de omgeving wordt opnieuw opgebouwd.")
+            WHEEL_SENTINEL.unlink(missing_ok=True)
+            shutil.rmtree(VENV, ignore_errors=True)
         if not _venv_py().exists():
             _maak_venv()
     else:
         _meld(f"Nieuwe versie in de bundel ({wheel.name}); de lokale omgeving wordt bijgewerkt.")
     if not _zorg_voor_pip():
         shutil.rmtree(VENV, ignore_errors=True)
+        BEZIG.unlink(missing_ok=True)
         _fout("pip kon niet in de omgeving worden gezet. Start Claude Desktop opnieuw; lukt het dan "
               "niet, installeer Python opnieuw via python.org.")
     # De [browser]-extra trekt Playwright mee (de Python-kant); Chromium volgt apart en
@@ -280,9 +315,11 @@ def _installeer(wheel: Path) -> None:
             WHEEL_SENTINEL.unlink(missing_ok=True)
             _fout("installatie mislukt. De eerste start vergt een internetverbinding (dependencies "
                   "van PyPI); start Claude Desktop daarna opnieuw.")
+        BEZIG.unlink(missing_ok=True)  # pip stopte zelf en draaide zijn wijzigingen terug
         _meld("Bijwerken mislukt; de server start met de vorige versie.")
         return
     WHEEL_SENTINEL.write_text(wheel.name + "\n")
+    BEZIG.unlink(missing_ok=True)
     _meld("Omgeving klaar." if eerste_keer else "Bijgewerkt.")
 
 
@@ -295,12 +332,7 @@ def _zorg_voor_omgeving(wheel: Path) -> None:
 
 def _download_chromium() -> None:
     _meld("Browser-zoeken aan: Chromium wordt eenmalig gedownload (~100 MB, vergt internet)...")
-    resultaat = subprocess.run(
-        [str(_venv_py()), "-m", "playwright", "install", "chromium"],
-        stdout=sys.stderr,
-        stderr=sys.stderr,
-    )
-    if resultaat.returncode == 0:
+    if _draai([str(_venv_py()), "-m", "playwright", "install", "chromium"]) == 0:
         CHROMIUM_SENTINEL.write_text("ok\n")
         _meld("Chromium klaar.")
     else:

@@ -9,7 +9,7 @@ ze hier, niet op de afzonderlijke plaatsen (tests bewaken dat ze overal aanwezig
 """
 
 __all__ = ["__version__", "REPO_URL", "user_agent", "DISCLAIMER", "DISCLAIMER_KORT", "PRIVACY"]
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 REPO_URL = "https://github.com/jefseghers-del/rechtspraak-mcp"
 

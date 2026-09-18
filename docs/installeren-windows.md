@@ -12,7 +12,7 @@ De wheel in de bundel is platformonafhankelijk (`py3-none-any`); de dependencies
 start van PyPI gehaald in de Windows-variant. Eén bundel werkt dus op macOS én Windows.
 
 > **Eerlijk gezegd:** de bootstrap is op macOS getest, onder meer met drie gelijktijdige starts en met een
-> achtergelaten installatieslot. De Windows-specifieke paden (`Scripts\python.exe`, het kindproces in plaats
+> installeerder die hard (`kill -9`) werd gestopt, met en zonder zijn pip. De Windows-specifieke paden (`Scripts\python.exe`, het kindproces in plaats
 > van `exec`, de omleiding van Store-Python, de procescontrole via `OpenProcess`) zijn ontworpen op basis van
 > echte Windows-logs, maar konden op macOS niet echt worden uitgevoerd. Meld problemen met het logbestand.
 
@@ -89,9 +89,16 @@ werkt ongewijzigd op Windows.
   `venv` zelf), maar de versie van python.org blijft de betrouwbaarste keuze.
 - **Gelijktijdige starts.** Claude Desktop start de extensie vaak meermaals tegelijk, en sluit soms een
   instantie na een fractie van een seconde weer af. Precies één proces installeert de omgeving
-  (lockbestand `server\.bootstrap.lock`); de andere wachten. Het slot bewaart het proces-ID: is dat proces
-  gestopt, dan neemt een wachtend proces het meteen over. Duurt de installatie langer dan Claude Desktop wil
-  wachten, dan verschijnt "Request timed out"; de installatie loopt door en de volgende start werkt.
+  (lockbestand `server\.bootstrap.lock`); de andere wachten. Het slot bewaart de proces-ID's van de
+  installeerder en, sinds versie 0.1.2, ook van zijn pip-processen (en van `playwright install`): zijn die
+  allemaal gestopt, dan neemt een wachtend proces het slot meteen over. Zo schrijven een verweesde pip en
+  een overnemer nooit tegelijk in dezelfde omgeving. Een slot ouder dan 15 minuten vervalt hoe dan ook.
+- **Afgebroken installatie.** pip installeert niet atomair: een hard afgebroken pip kan een pakket half
+  achterlaten, dat een volgende pip dan als "al geïnstalleerd" overslaat. Sinds versie 0.1.2 staat er
+  daarom een marker `server\.installatie_bezig` zolang de installatie loopt; vindt een volgende start die
+  nog, dan bouwt hij de omgeving opnieuw op ("Een vorige installatie werd afgebroken" in het log).
+- **Duurt de eerste installatie** langer dan Claude Desktop wil wachten, dan verschijnt "Request timed
+  out"; de installatie loopt gewoon door en de volgende start werkt.
 - **Geen echte `exec`.** De bootstrap start de server daarom als kindproces en geeft de exitcode door; op
   macOS en Linux vervangt hij het proces met `os.execve`.
 - **Browser-zoeken op Juportal (optioneel).** Playwright en Chromium bestaan voor Windows; bij het aanzetten

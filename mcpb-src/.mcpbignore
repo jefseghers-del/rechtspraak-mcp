@@ -6,3 +6,4 @@ server/venv/
 server/.wheel_ok
 server/.chromium_ok
 server/.bootstrap.lock
+server/.installatie_bezig

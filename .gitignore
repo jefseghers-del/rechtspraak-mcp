@@ -12,6 +12,7 @@ mcpb-src/LICENSE
 mcpb-src/server/venv/
 mcpb-src/server/.*_ok
 mcpb-src/server/.bootstrap.lock
+mcpb-src/server/.installatie_bezig
 
 # Logbestanden
 *.log
